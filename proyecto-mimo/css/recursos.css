@@ -1,0 +1,20 @@
+/*Estilos aplicados a recursos debido a que al ser muchos html no quiero un mejunje en el styles.css
+El styles es sólo para generales!!*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(242, 215, 217);
+  }
+  .h1, h2{
+    font-size: calc(1.325rem + .9vw);
+}
+  h1{
+      margin: 15px;
+      font-family: 'Fredoka One', cursive;
+      color: #395a7b;
+  }
+  
