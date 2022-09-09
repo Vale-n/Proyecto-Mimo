@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px){ /*Esto hace que el section sea responsive, ni yo sé xq dice main y no section, 
+                              pero si dice section se rompe todo, no lo toquen kjjj*/
+main {
+    width: 95%;
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+}
+
+body{
+  background-color: rgb(242, 215, 217);
+}
+
+.h1, h2{
+  font-size: calc(1.325rem + .9vw);
+}
+h1{
+    margin: 15px;
+    font-family: 'Fredoka One', cursive;
+    color: #395a7b;
+}
+
+h2 { /*Animación que dice Mimo*/
+    text-decoration: none;
+    color: rgb(57, 90, 123);
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background: rgb(205, 125, 132);
+    padding: 70px 50px;
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    border-radius: 50%;
+    animation: animacion 4s linear infinite;
+  }
+ @keyframes animacion {
+   0% {
+     box-shadow: 0 0 0 0 rgba(29, 171, 209, .6),  0 0 0 0 rgba(29, 171, 209, .6);
+   }
+ 
+   30% {
+     box-shadow: 0 0 0 100px rgba(29, 171, 209, 0), 0 0 0 0 rgba(29, 171, 209, .6);
+   }
+ 
+   65% {
+     box-shadow: 0 0 0 100px rgba(29, 171, 209, 0), 0 0 0 30px rgba(29, 171, 209, 0);
+   }
+ 
+   100% {
+     box-shadow: 0 0 0 0 rgba(29, 171, 209, 0), 0 0 0 30px rgba(29, 171, 209, 0);
+   }
+
+ } /*Animación que dice Mimo*/
+ 
+ .queEsMimo { /*Este es el section de la importancia de mimo, y de cualquier otro section*/
+    background-color: #d3cedf;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px 5px #666;
+    display: block;
+}
+
+ 
