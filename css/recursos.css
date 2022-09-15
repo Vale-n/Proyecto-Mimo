@@ -1,10 +1,11 @@
 /*Estilos aplicados a recursos debido a que al ser muchos html no quiero un mejunje en el styles.css
 El styles es sólo para generales!!*/
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@300;500&family=Questrial&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
 }
 body{
     background-color: rgb(242, 215, 217);
