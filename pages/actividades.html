@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/recursos.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Actividades</title>
 </head>
 <body>
@@ -61,7 +61,48 @@
             </div>
           </nav> <!--NAVBAR-->
         </header> <!--HEADER-->
-    <main></main>
+    <main>
+      <h1>ACTIVIDADES</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati illum maiores commodi architecto, <br>
+        consequuntur itaque tempora consequatur tempore voluptatem accusamus nobis dolor, quos, tenetur assumenda magnam nulla optio iste ratione.</p>
+      <div>
+        <form action="" class="form">
+          
+          <input type="checkbox" name="actividad" id="cbox1" class="valores" value="cbox1"><label for="cbox1">Lorem ipsum, dolor siiunt est mas non pidipariatur dolor?</label><br>
+          <input type="checkbox" name="actividad" id="cbox2" class="valores" value="cbox2"><label for="cbox2">Lorem ipsum, dolor siiunt est mas non pidipariatur dolor?</label><br>
+          <input type="checkbox" name="actividad" id="cbox3" class="valores" value="cbox3"><label for="cbox3">Lorem ipsum, dolor siiunt est mas non pidipariatur dolor?</label><br>
+          <input type="checkbox" name="actividad" id="cbox4" class="valores" value="cbox4"><label for="cbox4">Lorem ipsum, dolor siiunt est mas non pidipariatur dolor?</label><br>
+          <button type="button" id="boton">Enviar actividades</button>
+        </form>
+        <h1 id="mensaje"></h1>
+        <ul id="lista"></ul>
+      </div>
+    </main>
+    <script>
+      let boton= document.getElementById('boton');
+      let lista= document.getElementById('lista');
+      let mensaje=document.getElementById('mensaje');
+      let checks= document.querySelectorAll('.valores');
+      
+      boton.addEventListener('click', function(){
+        lista.innerHTML='';
+        mensaje.innerHTML='';
+        let msj=document.createElement('h1');
+        msj.innerHTML='Terminaste las siguientes actividades';
+        mensaje.append(msj);
+        checks.forEach((e)=>{
+ 
+            if(e.checked){
+              let elemento=document.createElement('li');
+              elemento.className='li';
+              elemento.innerHTML=e.value;
+              lista.appendChild(elemento);
+            }
+           
+        });
+
+      });
+    </script>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>

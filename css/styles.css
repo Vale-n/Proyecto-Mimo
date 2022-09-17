@@ -10,9 +10,16 @@
 main {
     width: 95%;
     margin: 25px;
-    display: grid;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+      
+
+   /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
+    grid-column: auto;*/
     gap: 10px;
 }
 }
@@ -63,7 +70,7 @@ h2 { /*Animación que dice Mimo*/
 
  } /*Animación que dice Mimo*/
  
- .queEsMimo { /*Este es el section de la importancia de mimo, y de cualquier otro section*/
+ .queEsMimo , .form { /*Este es el section de la importancia de mimo, y de cualquier otro section*/
     background-color: #d3cedf;
     padding: 20px;
     border-radius: 30px;
@@ -71,4 +78,9 @@ h2 { /*Animación que dice Mimo*/
     display: block;
 }
 
- 
+.reproductor{
+  display: flex;
+  
+
+}
+
