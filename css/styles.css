@@ -31,7 +31,7 @@ h1{
     color: #395a7b;
 }
 
-h2 { /*Animación que dice Mimo*/
+.logo { /*Animación que dice Mimo*/
     text-decoration: none;
     color: rgb(57, 90, 123);
     position: absolute;
@@ -64,7 +64,7 @@ h2 { /*Animación que dice Mimo*/
 
  } /*Animación que dice Mimo*/
  
- .queEsMimo { /*Este es el section de la importancia de mimo, y de cualquier otro section*/
+ .queEsMimo { /*Este es el section de la importancia de mimo*/
     background-color: #d3cedf;
     padding: 20px;
     border-radius: 30px;
