@@ -11,15 +11,11 @@
 main {
     width: 95%;
     margin: 25px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-
-   /* display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
-    grid-column: auto;*/
-    gap: 10px;
+    grid-column: auto;
+    gap: 94px;
 }
 }
 
@@ -36,7 +32,7 @@ h1{
     color: #395a7b;
 }
 
-.logo { /*Animación que dice Mimo*/
+/*.logo { /*Animación que dice Mimo
     text-decoration: none;
     color: rgb(57, 90, 123);
     position: absolute;
@@ -49,7 +45,22 @@ h1{
     text-transform: uppercase;
     border-radius: 50%;
     animation: animacion 4s linear infinite;
-  }
+  }*/
+  .logo {
+    text-decoration: none;
+    color: rgb(57, 90, 123);
+    position: absolute;
+   
+    top: 45%; /*45%*/
+    left: 15%;
+    transform: translate(-50%, -50%);
+    background: rgb(205, 125, 132);
+    padding: 70px 50px;
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    border-radius: 50%;
+    animation: animacion 4s linear infinite;
+}
  @keyframes animacion {
    0% {
      box-shadow: 0 0 0 0 rgba(29, 171, 209, .6),  0 0 0 0 rgba(29, 171, 209, .6);
@@ -69,15 +80,114 @@ h1{
 
  } /*Animación que dice Mimo*/
  
- .queEsMimo { /*Este es el section de la importancia de mimo, y de cualquier otro section*/
+ /*.queEsMimo { /*Este es el section de la importancia de mimo, y de cualquier otro section
     background-color: #d3cedf;
     padding: 20px;
     border-radius: 30px;
     box-shadow: 3px 3px 5px 5px #666;
     display: block;
+}*/
+
+
+.queEsMimo {
+  width: 50rem;/*65%*/
+  height: 15rem;
+  background-color: #d3cedf;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 5px 5px #666;
+
 }
 
-.reproductor{
+
+/*-----------------------REPRODUCTOR-------------------------*/
+
+
+
+/* Player */
+.player {
+  /*min-width: 10;*/
+  width: 20rem;
+  background-image: linear-gradient( #D3CEDF,#F2D7D9);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: #F47C7C;
+  box-shadow: 2px 2px 3px #666;
+}
+
+/* Title */
+.title {
+  margin-top: 0;
+  text-align: center;
+ 
+}
+
+/* Cover */
+.cover {
+/*  width: 128px;
+  height: auto;*/
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+/* Progress */
+.progress-container {
+  height: .6rem;
+  background-color: #748DA6;
+  margin-bottom: 1rem;
+  
+}
+
+.progress {
+  background-color: #FF7396;
+  width: 0;
+  height: 100%;
+}
+
+/* Controls */
+.controls {
   display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.controls button {
+  background-color: transparent;
+  border: none;
+}
+
+.controls i {
+  font-size: 1.7rem;
+  color: #748DA6;
+}
+
+/* Songs */
+.songs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ 
+}
+
+.songs li {
+
+  margin-bottom: 1rem;
+
+
+}
+
+.songs a {
+  color: #FF7396;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.songs a.active {
+  color: #748DA6;
+  font-weight: bold;
 }
 
