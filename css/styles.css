@@ -11,10 +11,10 @@
 main {
     width: 95%;
     margin: 25px;
-    display: grid;
+   /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
-    gap: 10px;
+    gap: 10px; */
 }
 }
 
