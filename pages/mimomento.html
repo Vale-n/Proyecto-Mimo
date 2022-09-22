@@ -55,7 +55,67 @@
           </nav> <!--NAVBAR-->
         </header> <!--HEADER-->
        
-        <main></main>
+        <main>
+
+          <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Título da Aba -->
+    <title>Temporizador</title>
+</head>
+<body>
+    <!-- Encabezado -->
+
+
+    <section id="main_section">
+        <!-- Input de información -->
+        <div id="input">
+            <!-- Horas del temporizador -->
+            <p id="hours_paragraph">
+                Hours:
+            </p>
+            <select name="hours" id="hours"></select>
+
+            <!-- Minutos del temporizador -->
+            <p id="minutes_paragraph">
+                Minutes:
+            </p>
+            <select name="minutes" id="minutes"></select>
+
+            <!-- Segundos del temporizador -->
+            <p id="seconds_paragraph">
+                Seconds:
+            </p>
+            <select name="seconds" id="seconds"></select>
+
+            <!-- Boton inicializador de conteo ! -->
+            <p>
+                <button id="start" onclick="startCountDown()">Start</button>
+            </p>
+        </div>
+
+        <!-- Output de informacion -->
+        <div id="output">
+            <h3></h3>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="page_footer">
+        <h6>@Mimo</h6>
+    </footer>
+
+    <!-- Link JavaScript -->
+    <script src="js/timer.js"></script>
+</body>
+</html>
+        </main>
         <footer></footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

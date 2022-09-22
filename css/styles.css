@@ -72,4 +72,82 @@ h1{
     display: block;
 }
 
+ /* Css del Timer*/
+/* A partir de acá es el time*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 { 
+    font-family: 'Fredoka One', cursive;
+
+}
+
+header > h1{
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Elementos da tag <body> */
+body{
+
+    color: rgb(255, 255, 255);
+    font: normal 14pt Arial;
+    text-align: center;
+
+
+    
+}
+
+/* Elementos con ID "main_section" */
+#main_section{
+    background-color: rgb(247, 241, 225);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+    border-radius: 50px;
+
+
+    
  
+
+    color: rgb(74, 80, 165);
+
+    width: 300px;
+    padding: 5px;
+    margin: auto;
+}
+
+/* Elementos con ID "hours", "minutes" y "seconds" */
+#hours, #minutes, #seconds{
+    cursor: auto;
+    border-radius: 10px;
+
+}
+
+/* Elementos con ID "start" */
+#start{
+    background: rgb(90, 130, 184);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.400);
+
+    border: 300px;
+    border-radius: 30px;
+
+    width: 80px;
+    height: 35px;
+    margin-top: 5px;
+
+    color: rgb(255, 255, 255);
+    font-size: 12pt;
+
+    cursor: pointer;
+}
+
+/* Elementos con ID "start" no estado de pseudoclasse "hover" */
+#start:hover{
+    background: rgb(64, 76, 90);
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.400);
+}
+/*Hasta acá contenido del timer*/
