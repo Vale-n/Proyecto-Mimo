@@ -15,7 +15,7 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
     grid-column: auto;
-    gap: 94px;
+    gap: 37px;
 }
 }
 
@@ -32,20 +32,7 @@ h1{
     color: #395a7b;
 }
 
-/*.logo { /*Animación que dice Mimo
-    text-decoration: none;
-    color: rgb(57, 90, 123);
-    position: absolute;
-    top: 40%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    background: rgb(205, 125, 132);
-    padding: 70px 50px;
-    font-family: 'Fredoka One', cursive;
-    text-transform: uppercase;
-    border-radius: 50%;
-    animation: animacion 4s linear infinite;
-  }*/
+
   .logo {
     text-decoration: none;
     color: rgb(57, 90, 123);
@@ -80,13 +67,7 @@ h1{
 
  } /*Animación que dice Mimo*/
  
- /*.queEsMimo { /*Este es el section de la importancia de mimo, y de cualquier otro section
-    background-color: #d3cedf;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 3px 3px 5px 5px #666;
-    display: block;
-}*/
+
 
 
 .queEsMimo {
@@ -189,5 +170,71 @@ h1{
 .songs a.active {
   color: #748DA6;
   font-weight: bold;
+}
+
+/*------------NEWSLETTER--------------*/
+
+#newsletter{
+  width: 600px;
+  height: 200px;
+
+  background-color: #e4a6aba8;
+  box-shadow: 3px 3px 5px 5px #D3CEDF;
+  border-radius: 50px;
+}
+
+#titulo-news{
+  color: #FF7396;
+  font-weight: bold;
+  padding-left: 11%;
+  padding-top: 1%;
+  margin-bottom: 0;
+
+}
+
+#div-form{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  
+}
+#newsletter label{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10%;
+  margin-top: 4%;
+}
+#newsletter input{
+  width: 90%;
+  background-color: #d3cedf;
+  font-size: 20px;
+  color:#FF7396;
+  padding: 3%;
+  border: none;
+  border-radius: 5px;
+  
+}
+.fa-heart , .fa-envelope{
+  margin: 4%;
+  color: #FF7396;
+}
+
+#nombre{
+  margin-bottom: 10px;
+}
+
+#img-news{
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 4%;
+}
+
+#btn-news{
+  width: 25%;
+  color: #FF7396;
+  background-color:#d3cedf;
+  border-radius: 6px;
+  border: 1px outset hsla(345, 100%, 73%, 0.452);
+  margin-top: 3%;
+  margin-left: 37%;
 }
 
