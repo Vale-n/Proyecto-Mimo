@@ -31,10 +31,10 @@ h1{
     color: #395a7b;
 }
 
+
 .logo { /*Animación que dice Mimo*/
     text-decoration: none;
     color: rgb(57, 90, 123);
-    position: absolute;
     top: 40%;
     left: 70%;
     transform: translate(-50%, -50%);
@@ -43,6 +43,9 @@ h1{
     font-family: 'Fredoka One', cursive;
     text-transform: uppercase;
     border-radius: 50%;
+    margin: 50px;
+    display: flex;
+    justify-items: flex-start;
     animation: animacion 4s linear infinite;
   }
  @keyframes animacion {
@@ -70,38 +73,37 @@ h1{
     border-radius: 30px;
     box-shadow: 3px 3px 5px 5px #666;
     display: block;
+    margin: 30px;
 }
 
  /* Css del Timer*/
-/* A partir de acá es el time*/
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
+/* A partir de acá es el timer*/
 main{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:flex-end;
+  flex-direction: column;
 }
 
-h1 { 
-    font-family: 'Fredoka One', cursive;
 
-}
+
+
 
 header > h1{
   display: flex;
   justify-content: flex-start;
 }
 
-/* Elementos da tag <body> */
+/* Elementos da tag <body> 
 body{
 
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font: normal 14pt Arial;
     text-align: center;
 
 
     
-}
+}*/
 
 /* Elementos con ID "main_section" */
 #main_section{
