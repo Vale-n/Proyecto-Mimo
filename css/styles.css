@@ -32,6 +32,13 @@ h1{
     color: #395a7b;
 }
 
+  .contenedor_logo{
+    position: relative;   
+    box-sizing: border-box;
+
+    margin-top: 40px;
+    margin-left: 170px;
+  }
 
   .logo {
     text-decoration: none;
