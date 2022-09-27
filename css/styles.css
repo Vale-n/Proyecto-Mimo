@@ -34,6 +34,7 @@ h1{
 
 .logo { /*Animación que dice Mimo*/
     text-decoration: none;
+    position: absolute;
     color: rgb(57, 90, 123);
     top: 40%;
     left: 70%;
@@ -44,8 +45,6 @@ h1{
     text-transform: uppercase;
     border-radius: 50%;
     margin: 50px;
-    display: flex;
-    justify-items: flex-start;
     animation: animacion 4s linear infinite;
   }
  @keyframes animacion {
@@ -72,9 +71,8 @@ h1{
     padding: 20px;
     border-radius: 30px;
     box-shadow: 3px 3px 5px 5px #666;
-    display: block;
     margin: 30px;
-}
+ }
 
  /* Css del Timer*/
 /* A partir de acá es el timer*/
@@ -110,7 +108,7 @@ body{
     background-color: rgb(247, 241, 225);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
     border-radius: 50px;
-
+  
 
     
  
@@ -126,8 +124,9 @@ body{
 #hours, #minutes, #seconds{
     cursor: auto;
     border-radius: 10px;
+    
+    }
 
-}
 
 /* Elementos con ID "start" */
 #start{
