@@ -14,7 +14,8 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
-    gap: 10px;
+    grid-column: auto;
+    gap: 37px;
 }
 }
 
@@ -31,22 +32,31 @@ h1{
     color: #395a7b;
 }
 
+  .contenedor_logo{
+    position: relative;   
+    box-sizing: border-box;
 
-.logo { /*Animación que dice Mimo*/
+    margin-top: 40px;
+    margin-left: 170px;
+  }
+
+  .logo {
     text-decoration: none;
-    position: absolute;
     color: rgb(57, 90, 123);
-    top: 40%;
-    left: 70%;
+    /* position: absolute; */
+    display: inline-block;
+    top: 45%; /*45%*/
+    left: 15%;
     transform: translate(-50%, -50%);
     background: rgb(205, 125, 132);
+
     padding: 70px 50px;
+    
     font-family: 'Fredoka One', cursive;
     text-transform: uppercase;
     border-radius: 50%;
-    margin: 50px;
     animation: animacion 4s linear infinite;
-  }
+}
  @keyframes animacion {
    0% {
      box-shadow: 0 0 0 0 rgba(29, 171, 209, .6),  0 0 0 0 rgba(29, 171, 209, .6);
@@ -66,89 +76,174 @@ h1{
 
  } /*Animación que dice Mimo*/
  
- .queEsMimo { /*Este es el section de la importancia de mimo*/
-    background-color: #d3cedf;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 3px 3px 5px 5px #666;
-    margin: 30px;
- }
 
- /* Css del Timer*/
-/* A partir de acá es el timer*/
-main{
-  display: flex;
-  justify-content: center;
-  align-items:flex-end;
-  flex-direction: column;
+
+
+.queEsMimo {
+  width: 50rem;/*65%*/
+  height: 15rem;
+  background-color: #d3cedf;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 5px 5px #666;
+
 }
 
 
+/*-----------------------REPRODUCTOR-------------------------*/
 
 
 
-header > h1{
-  display: flex;
-  justify-content: flex-start;
+/* Player */
+.player {
+  /*min-width: 10;*/
+  width: 20rem;
+  background-image: linear-gradient( #D3CEDF,#F2D7D9);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: #F47C7C;
+  box-shadow: 2px 2px 3px #666;
 }
 
-/* Elementos da tag <body> 
-body{
-
-    color: rgb(0, 0, 0);
-    font: normal 14pt Arial;
-    text-align: center;
-
-
-    
-}*/
-
-/* Elementos con ID "main_section" */
-#main_section{
-    background-color: rgb(247, 241, 225);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
-    border-radius: 50px;
-  
-
-    
+/* Title */
+.title {
+  margin-top: 0;
+  text-align: center;
  
-
-    color: rgb(74, 80, 165);
-
-    width: 300px;
-    padding: 5px;
-    margin: auto;
 }
 
-/* Elementos con ID "hours", "minutes" y "seconds" */
-#hours, #minutes, #seconds{
-    cursor: auto;
-    border-radius: 10px;
-    
-    }
-
-
-/* Elementos con ID "start" */
-#start{
-    background: rgb(90, 130, 184);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.400);
-
-    border: 300px;
-    border-radius: 30px;
-
-    width: 80px;
-    height: 35px;
-    margin-top: 5px;
-
-    color: rgb(255, 255, 255);
-    font-size: 12pt;
-
-    cursor: pointer;
+/* Cover */
+.cover {
+/*  width: 128px;
+  height: auto;*/
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto 1rem auto;
 }
 
-/* Elementos con ID "start" no estado de pseudoclasse "hover" */
-#start:hover{
-    background: rgb(64, 76, 90);
-    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.400);
+/* Progress */
+.progress-container {
+  height: .6rem;
+  background-color: #748DA6;
+  margin-bottom: 1rem;
+  
 }
-/*Hasta acá contenido del timer*/
+
+.progress {
+  background-color: #FF7396;
+  width: 0;
+  height: 100%;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.controls button {
+  background-color: transparent;
+  border: none;
+}
+
+.controls i {
+  font-size: 1.7rem;
+  color: #748DA6;
+}
+
+/* Songs */
+.songs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ 
+}
+
+.songs li {
+
+  margin-bottom: 1rem;
+
+
+}
+
+.songs a {
+  color: #FF7396;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.songs a.active {
+  color: #748DA6;
+  font-weight: bold;
+}
+
+/*------------NEWSLETTER--------------*/
+
+#newsletter{
+  width: 600px;
+  height: 200px;
+
+  background-color: #e4a6aba8;
+  box-shadow: 3px 3px 5px 5px #D3CEDF;
+  border-radius: 50px;
+}
+
+#titulo-news{
+  color: #FF7396;
+  font-weight: bold;
+  padding-left: 11%;
+  padding-top: 1%;
+  margin-bottom: 0;
+
+}
+
+#div-form{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  
+}
+#newsletter label{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10%;
+  margin-top: 4%;
+}
+#newsletter input{
+  width: 90%;
+  background-color: #d3cedf;
+  font-size: 20px;
+  color:#FF7396;
+  padding: 3%;
+  border: none;
+  border-radius: 5px;
+  
+}
+.fa-heart , .fa-envelope{
+  margin: 4%;
+  color: #FF7396;
+}
+
+#nombre{
+  margin-bottom: 10px;
+}
+
+#img-news{
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 4%;
+}
+
+#btn-news{
+  width: 25%;
+  color: #FF7396;
+  background-color:#d3cedf;
+  border-radius: 6px;
+  border: 1px outset hsla(345, 100%, 73%, 0.452);
+  margin-top: 3%;
+  margin-left: 37%;
+}
+
