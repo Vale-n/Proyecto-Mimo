@@ -73,7 +73,7 @@ h1{
 }
 
 
-/*-----------CARRUSEL-------------*/
+/*-------------------------------------CARRUSEL-------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 *, *:before, *:after {
   box-sizing: border-box;
@@ -81,7 +81,7 @@ h1{
 
 body {
   background-color: rgb(242, 215, 217);
-  font: 14px/20px "Lato", Arial, sans-serif;
+ font: 14px/20px "Lato", Arial, sans-serif;
   color: #9E9E9E;
   margin-top: 30px;
 }
@@ -331,4 +331,4 @@ body {
 }
 
 
-/*-----------CARRUSEL-------------*/
+/*--------------------------------------------CARRUSEL-----------------------------------------------------*/
