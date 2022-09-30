@@ -6,6 +6,25 @@
     font-family: 'Questrial', sans-serif;
 }
 
+@font-face { /*------------------------------Iconos de redes del footer-----------------*/
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?7hng8f');
+  src:  url('../fonts/icomoon.eot?7hng8f#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7hng8f') format('truetype'),
+    url('../fonts/icomoon.woff?7hng8f') format('woff'),
+    url('../fonts/icomoon.svg?7hng8f#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+} /*-------------------------------------------------------------------------------------*/
+
+body {
+  background-color: rgb(242, 215, 217);
+ /* font: 14px/20px "Lato", Arial, sans-serif;*/
+  /*color: #9E9E9E; */
+  margin-top: 30px;
+}
+
 @media (min-width: 768px){ /*Esto hace que el section sea responsive, ni yo sé xq dice main y no section, 
                               pero si dice section se rompe todo*/
 main {
@@ -18,10 +37,6 @@ main {
 }
 }
 
-/*body{
-  background-color: rgb(242, 215, 217);
-}*/
-
 .h1, h2{
   font-size: calc(1.325rem + .9vw);
 }
@@ -31,7 +46,7 @@ h1{
     color: #395a7b;
 }
 
-.logo { /*Animación que dice Mimo*/
+.logo { /*--------------------------------------------Animación que dice Mimo------------------------------------*/
     text-decoration: none;
     color: rgb(57, 90, 123);
     position: absolute;
@@ -60,11 +75,10 @@ h1{
  
    100% {
      box-shadow: 0 0 0 0 rgba(29, 171, 209, 0), 0 0 0 30px rgba(29, 171, 209, 0);
-   }
+   }/*--------------------------------------------Animación que dice Mimo------------------------------------*/
 
- } /*Animación que dice Mimo*/
- 
- .queEsMimo { /*Este es el section de la importancia de mimo*/
+ } 
+ .queEsMimo { /*---------------------------Este es el section de qué se trata mimo------------*/
     background-color: #d3cedf;
     padding: 20px;
     border-radius: 30px;
@@ -73,17 +87,10 @@ h1{
 }
 
 
-/*-------------------------------------CARRUSEL-------------------------------------------*/
+/*-------------------------------------CARRUSEL NOSOTRAS-------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 *, *:before, *:after {
   box-sizing: border-box;
-}
-
-body {
-  background-color: rgb(242, 215, 217);
-  font: 14px/20px "Lato", Arial, sans-serif;
-  color: #9E9E9E; 
-  margin-top: 30px;
 }
 
 .slide-container {
@@ -329,6 +336,146 @@ body {
   right: 100px;
   z-index: 999;
 }
+/*--------------------------------------------CARRUSEL NOSOTRAS-----------------------------------------------------*/
 
+/*----------------------------------------------------Footer --------------------------------------------------*/
+[class^="icon-"], [class*=" icon-"] { /*NO TOCAR, ICONOS DE REDES¨*/
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #ffff;
+  padding: 10px;
+  font-size: 30px;
+  background-color: #748DA6;
+  margin: 0px;
 
-/*--------------------------------------------CARRUSEL-----------------------------------------------------*/
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook2:before {
+  content: "\ea91";
+  background-color: #748DA6;
+}
+.icon-instagram:before {
+  content: "\ea92";
+  background-color: #748DA6;
+}
+.icon-spotify:before {
+  content: "\ea94";
+  background-color: #748DA6;
+}
+.icon-linkedin:before {
+  content: "\eac9";
+  background-color: #748DA6;
+} /*--------------------------------------Iconos de redes-------*/
+
+footer{
+  bottom: 0;
+  width: 100%;
+  background-color: #748DA6;
+  padding-bottom: 10px;
+}
+
+.main-info{
+  background-color: #748DA6;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 50px;
+}
+
+footer img{
+  margin: 10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 58px;
+}
+
+.titulo-footer{
+  background-color: #748DA6;
+  font-family: 'Fredoka One', cursive;
+  padding-left: 0px;
+  margin: 10px;
+  color: #ffff;
+  font-size: 2.9rem;
+}
+
+.p-footer{
+  margin: 15px;
+  background-color: #748DA6;
+  height: 100%;
+  width: 700px;
+  padding-right: 40px;
+  padding-left: 50px;
+  text-align: center;
+  color: white;
+}
+
+.footer-links{
+  background-color: #748DA6;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+#siguenos{
+  background-color: #748DA6;
+}
+
+footer a{
+  margin: 10px;
+  text-decoration: none;
+  background-color: #748DA6;
+  color: #748DA6;
+  background-color: white;
+  border-radius: 25px;
+  padding: 8px;
+  transition: ease-in-out .2s;
+}
+
+a:hover{
+  background-color: rgba(255, 255, 255, .6);
+}
+
+.separador{
+  height: 3px;
+  background-color: white;
+  width: 95%;
+  margin: auto;
+}
+
+.footer-redes{
+ background-color: #748DA6;
+  width: 98.5%;
+  height: 60px;
+  margin: 5px;
+}
+
+.footer-redes-span{
+  background-color: #748DA6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer-redes-iconos{
+  background-color: #748DA6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*----------------------------------------------------Footer --------------------------------------------------*/
