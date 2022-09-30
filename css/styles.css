@@ -7,7 +7,7 @@
 }
 
 @media (min-width: 768px){ /*Esto hace que el section sea responsive, ni yo sé xq dice main y no section, 
-                              pero si dice section se rompe todo, no lo toquen kjjj*/
+                              pero si dice section se rompe todo*/
 main {
     width: 95%;
     margin: 25px;
