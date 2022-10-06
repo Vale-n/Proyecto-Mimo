@@ -339,6 +339,13 @@ h1{
 /*--------------------------------------------CARRUSEL NOSOTRAS-----------------------------------------------------*/
 
 /*----------------------------------------------------Footer --------------------------------------------------*/
+
+/* Con esto borro el cuadradito rosa feo del footer: */
+
+footer{
+  height: 250px;
+}
+
 [class^="icon-"], [class*=" icon-"] { /*NO TOCAR, ICONOS DE REDES¨*/
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
