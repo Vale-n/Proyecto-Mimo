@@ -486,3 +486,74 @@ a:hover{
 }
 
 /*----------------------------------------------------Footer --------------------------------------------------*/
+
+/*-----------------------------------------------Sección de té ----------------------------------------------------*/
+.acordeon-main{
+  min-height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.accordion{
+  max-width: 830px;
+  width: 100%;
+  background: #FFF;
+  margin: 0 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 18px rgba(0,0,0, 0.2);
+}
+
+.accordion .accordion-content{
+  margin: 10px 0;
+  border-radius: 4px;
+  background: #f0d8da;
+  border: 1px solid #cd7d84;
+  overflow: hidden;   
+}
+.accordion-content.open{
+padding-bottom: 10px;  
+}
+
+.accordion-content header{
+ display: flex;
+ min-height: 50px;
+ background-color: #cd7d84;
+ padding: 0 15px;
+ cursor: pointer;
+ align-items: center;
+ justify-content: space-between;
+ transition: all 0.2s linear ;
+}
+.accordion-content.open header{
+  min-height: 35px;
+}
+
+.accordion-content header .title{
+ font-size: 18px; 
+ font-weight: 500;
+ color: #FFF7F0; 
+}
+.accordion-content header i{
+  font-size: 15px;
+  color: #FFF7F0; 
+}
+.accordion-content .description {
+ /* font-size: 15px;
+ color: #333; */ 
+  height: 0; 
+  padding: 0 15px;
+  font-weight: 400;
+  transition: all 0.2s linear;
+}
+
+img{
+  margin: 10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 58px;
+}
+
+/*-----------------------------------------------Sección de té ----------------------------------------------------*/
