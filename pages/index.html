@@ -72,12 +72,12 @@
   </header>
   <!--HEADER-->
 
-  <main>
+  <main id="grid-main" >
     <!--MAIN-->
-    <div> <h2 class="logo">Mimo</h2> </div>
+    <div id="logo-mimo"> <h2 class="logo">Mimo</h2> </div>
     
 
-    <section >
+    <section id="sec-mimo">
       <div class="queEsMimo">
       <h3>¿De qué se trata "Mimo"?</h3>
     
@@ -92,9 +92,9 @@
         atque.</p>
     </div>    
     </section> <!--fin section de descripcion--> 
-    <span></span>
+   
 
-    <section  >
+    <section id="sec-player" >
 
       <div class="player">
 
@@ -132,22 +132,25 @@
 
       </div>
     </section> <!-- fin de reproductor -->
-    <span></span>
+
+    
+  
+    <div id="news-div"  >
     <section id="newsletter">
       <p id="titulo-news">Consejos diarios para una mente sana en su bandeja de entrada</p>
       <div id="div-form">
         
       <img src="../img/icon-news.png" alt=""  id="img-news">
-        <form action="" >
+        <form action="php/codigo.php" method="post" enctype="multipart/form-data" >
           
           <label for=""   id="nombre">
           <i class="fa-solid fa-heart"></i>
-          <input type="text" placeholder="Nombre" >
+          <input type="text" placeholder="Nombre" name="nombre" >
           </label>
           
           <label for="" id="email" >
             <i class="fa-solid fa-envelope"></i>
-            <input type="email" name="" id="" placeholder="Email">
+            <input type="email" name="email" id="" placeholder="Email">
           </label>
           <button type="button" id="btn-news">Enviar</button>
         
@@ -155,7 +158,9 @@
         </form>
       </div>
 
+
     </section>  <!--fin section de newletter-->
+  </div>
     
   </main>
 

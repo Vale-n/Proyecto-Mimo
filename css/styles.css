@@ -9,13 +9,38 @@
 @media (min-width: 768px){ /*Esto hace que el section sea responsive, ni yo sé xq dice main y no section, 
                               pero si dice section se rompe todo, no lo toquen kjjj*/
 main {
-    width: 95%;
-    margin: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, auto);
-    grid-column: auto;
-    gap: 37px;
+    
+    margin: 14px;
+    display: grid; /*Agregar grid areas y probar */
+    grid-template-areas: 
+    "logo desc-mimo "
+    "player player "
+    "news news " ;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+#logo-mimo{
+  margin-top: 5%;
+  grid-area: logo;
+  }
+#sec-mimo{
+  margin-top: 5%;
+  justify-self:center;
+  grid-area: desc-mimo;
+}
+#sec-player{
+  margin-top: 10%;
+  justify-self:center;
+  grid-area: player;
+}
+#news-div{
+  margin-top: 10%;
+  justify-self: center;
+  grid-area: news;
+}
+#desc-musica{
+  grid-area: musica;
 }
 }
 
@@ -33,11 +58,10 @@ h1{
 }
 
 
-  .logo {
+.logo {
     text-decoration: none;
     color: rgb(57, 90, 123);
     position: absolute;
-   
     top: 45%; /*45%*/
     left: 15%;
     transform: translate(-50%, -50%);
@@ -70,8 +94,8 @@ h1{
 
 
 
-.queEsMimo {
-  width: 50rem;/*65%*/
+.queEsMimo  {
+  width: 52rem;
   height: 15rem;
   background-color: #d3cedf;
   padding: 20px;
@@ -238,3 +262,13 @@ h1{
   margin-left: 37%;
 }
 
+#news-div{
+
+}
+
+
+/*-----------ACTIVIDADES-----------------*/
+
+.div-act{
+  
+}
