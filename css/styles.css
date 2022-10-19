@@ -343,17 +343,6 @@ h1{
 /*--------------------------------------------CARRUSEL NOSOTRAS-----------------------------------------------------*/
 
 /*----------------------------------------------------Footer --------------------------------------------------*/
-@font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ysg399');
-  src:  url('fonts/icomoon.eot?ysg399#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ysg399') format('truetype'),
-    url('fonts/icomoon.woff?ysg399') format('woff'),
-    url('fonts/icomoon.svg?ysg399#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
