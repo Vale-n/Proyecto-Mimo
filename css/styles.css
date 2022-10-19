@@ -235,6 +235,7 @@ h1{
 .clash-card__unit-stats--barbarian {
   background: #EE5487;
 }
+
 .clash-card__unit-stats--barbarian .one-third {
   border-right: 1px solid #D04976;
 }
@@ -342,9 +343,19 @@ h1{
 /*--------------------------------------------CARRUSEL NOSOTRAS-----------------------------------------------------*/
 
 /*----------------------------------------------------Footer --------------------------------------------------*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ysg399');
+  src:  url('fonts/icomoon.eot?ysg399#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ysg399') format('truetype'),
+    url('fonts/icomoon.woff?ysg399') format('woff'),
+    url('fonts/icomoon.svg?ysg399#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
-
-[class^="icon-"], [class*=" icon-"] { /*NO TOCAR, ICONOS DE REDES¨*/
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -366,20 +377,24 @@ h1{
 
 .icon-facebook2:before {
   content: "\ea91";
-  background-color: #748DA6;
 }
 .icon-instagram:before {
   content: "\ea92";
-  background-color: #748DA6;
 }
 .icon-spotify:before {
   content: "\ea94";
-  background-color: #748DA6;
+}
+.icon-github:before {
+  content: "\eab0";
 }
 .icon-linkedin:before {
   content: "\eac9";
-  background-color: #748DA6;
-} /*--------------------------------------Iconos de redes-------*/
+}
+.icon-libreoffice:before {
+  content: "\eae3";
+}
+
+ /*--------------------------------------Iconos de redes-------*/
 
 footer{
   bottom: 0;
