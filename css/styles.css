@@ -11,11 +11,11 @@
 main {
     width: 95%;
     margin: 25px;
-    display: grid;
+ /*   display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
     grid-column: auto;
-    gap: 37px;
+    gap: 37px; */
 }
 }
 
@@ -38,7 +38,7 @@ h1{
 
     margin-top: 40px;
     margin-left: 170px;
-  }
+  } 
 
   .logo {
     text-decoration: none;
@@ -56,7 +56,8 @@ h1{
     text-transform: uppercase;
     border-radius: 50%;
     animation: animacion 4s linear infinite;
-}
+} 
+
  @keyframes animacion {
    0% {
      box-shadow: 0 0 0 0 rgba(29, 171, 209, .6),  0 0 0 0 rgba(29, 171, 209, .6);
@@ -74,7 +75,8 @@ h1{
      box-shadow: 0 0 0 0 rgba(29, 171, 209, 0), 0 0 0 30px rgba(29, 171, 209, 0);
    }
 
- } /*Animación que dice Mimo*/
+ } 
+ /*Animación que dice Mimo*/
  
 
 
@@ -248,12 +250,9 @@ h1{
 }
 
 /*--------------------- TIMER--------------------*/
-h1 { 
-  font-family: 'Fredoka One', cursive;
-  color: rgb(49, 49, 116);
-}
 
-/* Elementos da tag <body> */
+
+/* Elementos da tag <body> 
 body{
   background-color: rgb(211, 167, 184);
   color: rgb(255, 255, 255);
@@ -262,23 +261,25 @@ body{
 
 
   
-}
+} */
 
 /* Elementos con ID "main_section" */
 #main_section{
-  background-color: rgb(247, 241, 225);
+  background-color: #f7e9b7;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
   border-radius: 50px;
-
-
   
-
-
   color: rgb(74, 80, 165);
 
   width: 300px;
-  padding: 5px;
+  padding: 15px;
   margin: auto;
+
+
+
+
+  text-align: center;
+  font: normal 14pt 'Questrial';
 }
 
 /* Elementos con ID "hours", "minutes" y "seconds" */
@@ -311,3 +312,20 @@ body{
   background: rgb(64, 76, 90);
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.400);
 }
+
+.div-horas, .div-minutos, .div-segundos {
+  margin: 2px;
+  padding: 6px;
+  
+}
+h6{
+  font-family: 'Fredoka One', cursive;
+    color: #395a7b;
+    font-size: 20px;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+
+.playlist-celi{
+  
+}
+

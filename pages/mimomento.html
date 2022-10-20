@@ -63,27 +63,35 @@
         <!-- Input de información -->
         <div id="input">
             <!-- Horas del temporizador -->
-            <p id="hours_paragraph">
+            <div class="div-horas">
+            <h6 id="hours_paragraph">
                 Hours:
-            </p>
+            </h6>
             <select name="hours" id="hours"></select>
+          </div>
 
             <!-- Minutos del temporizador -->
-            <p id="minutes_paragraph">
+            <div class="div-minutos">
+            <h6 id="minutes_paragraph">
                 Minutes:
-            </p>
+            </h6>
             <select name="minutes" id="minutes"></select>
+          </div>
 
             <!-- Segundos del temporizador -->
-            <p id="seconds_paragraph">
+            <div class="div-segundos">
+            <h6 id="seconds_paragraph">
                 Seconds:
-            </p>
+            </h6>
             <select name="seconds" id="seconds"></select>
+          </div>
 
             <!-- Boton inicializador de conteo ! -->
+            <div class="div-botonStart">
             <p>
                 <button id="start" onclick="startCountDown()">Start</button>
             </p>
+          </div>
         </div>
 
         <!-- Output de informacion -->
@@ -92,10 +100,10 @@
         </div>
     </section>
 
-    <!-- Rodapé -->
+    <!-- Rodapé 
     <footer id="page_footer">
         <h6>@Mimo</h6>
-    </footer>
+    </footer> -->
 
     <!-- Link JavaScript -->
     <script src="js/timer.js"></script>

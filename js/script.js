@@ -36,7 +36,7 @@ function startCountDown(){
         if (seconds == 0) {
             if (minutes == 0) {
                 if (hours == 0) {
-                    alert("Aca va un mensaje final")
+                    alert("Te felicito por tomarte un momento para descansar (*°▽°*)")
                     clearInterval(interval)
 
                 } else {
