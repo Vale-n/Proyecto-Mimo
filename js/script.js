@@ -1,23 +1,4 @@
-//Horas, minutos e segundos HTML
-var hours$ = document.getElementById("hours")
-var minutes$ = document.getElementById("minutes")
-var seconds$ = document.getElementById("seconds")
 
-//Output de informações
-var output = document.getElementById("output")
-
-//Opções do <select> "hours"
-for (var cont = 0; cont <= 48; cont += 1) {
-    hours$.innerHTML += `<option value="${cont}">${cont}</option>`
-}
-//Opções do <select> "minutes"
-for (var cont = 0; cont <= 59; cont += 1) {
-    minutes$.innerHTML += `<option value="${cont}">${cont}</option>`
-}
-//Opções do <select> "seconds"
-for (var cont = 1; cont <= 59; cont += 1) {
-    seconds$.innerHTML += `<option value="${cont}">${cont}</option>`
-}
 
 //Iniciación del contador
 function startCountDown(){
@@ -36,7 +17,8 @@ function startCountDown(){
         if (seconds == 0) {
             if (minutes == 0) {
                 if (hours == 0) {
-                    alert("Te felicito por tomarte un momento para descansar (*°▽°*)")
+                    //alert("Te felicito por tomarte un momento para descansar (*°▽°*)")
+                    swal("Felicitaciones!", "Te felicito por tomarte un momento para descansar", "success");
                     clearInterval(interval)
 
                 } else {
