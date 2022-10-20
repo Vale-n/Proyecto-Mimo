@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@300;500&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -111,19 +113,23 @@ h1{
 
 /* Player */
 .player {
-  /*min-width: 10;*/
-  width: 20rem;
-  background-image: linear-gradient( #D3CEDF,#F2D7D9);
+  min-width: 10;
+ /* width: 20rem;*/
+  width: 28rem;
+  height: 667px;
+  background-image: linear-gradient( #e4a6ab,#D3CEDF);
   border-radius: 1rem;
   padding: 2rem;
   color: #F47C7C;
-  box-shadow: 2px 2px 3px #666;
+  box-shadow: 2px 2px 3px 3px #666;
 }
 
 /* Title */
 .title {
   margin-top: 0;
   text-align: center;
+  font-family: 'Inconsolata', monospace;
+  
  
 }
 
@@ -136,6 +142,7 @@ h1{
   border-radius: 100px;
   display: block;
   margin: 0 auto 1rem auto;
+  
 }
 
 /* Progress */
@@ -179,13 +186,12 @@ h1{
 
 .songs li {
 
-  margin-bottom: 1rem;
-
-
+  margin-bottom: 0.5rem;
 }
 
 .songs a {
   color: #FF7396;
+  font-family: 'Inconsolata', monospace;
   font-size: 1.7rem;
   font-weight: 700;
   text-decoration: none;
@@ -199,8 +205,8 @@ h1{
 /*------------NEWSLETTER--------------*/
 
 #newsletter{
-  width: 600px;
-  height: 200px;
+  width: 900px;
+  height: 250px;
 
   background-color: #e4a6aba8;
   box-shadow: 3px 3px 5px 5px #D3CEDF;
@@ -210,7 +216,7 @@ h1{
 #titulo-news{
   color: #FF7396;
   font-weight: bold;
-  padding-left: 11%;
+  padding-left: 22%;
   padding-top: 1%;
   margin-bottom: 0;
 
@@ -247,7 +253,7 @@ h1{
 }
 
 #img-news{
-  width: 60%;
+  width: 50%;
   margin-left: 20%;
   margin-top: 4%;
 }
@@ -262,13 +268,301 @@ h1{
   margin-left: 37%;
 }
 
-#news-div{
 
-}
 
 
 /*-----------ACTIVIDADES-----------------*/
-
-.div-act{
+#main-act{
+  display: grid;
+  grid-template-areas: 
+            "titulo titulo" 
+            "texto texto" 
+            "imagen form"
+            "mensaje mensaje";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
   
 }
+#titulo-act{
+  justify-self: center;
+  grid-area: titulo;
+}
+#texto-act{
+  width: 90%;
+  background-color:#D3CEDF;
+  border-radius: 14px;
+  border: 2px outset hsla(345, 100%, 73%, 0.452);
+  padding: 7px;
+  text-align: center;
+  font-size:large;
+  justify-self: center;
+  grid-area: texto;
+}
+#div-act{
+  justify-self:flex-end;
+  grid-area: form;
+  width: 700px;
+  height: auto;
+  
+}
+#img-act{
+  justify-self: center;
+  grid-area: imagen;
+}
+#img{
+  width: 300px;
+}
+#div-msj{
+  grid-area: mensaje;
+  justify-self: center;
+  text-transform: uppercase;
+}
+#lista{
+  text-transform: none;
+  font-size: 140%;
+ 
+  color: #FF7396;
+  
+
+
+}
+.li{
+  
+  margin: 0;
+  padding: 12px 0 12px 41px;
+  list-style: none;
+  background-image: url(/img/Mimo-act.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 32px;
+  
+}
+
+/* ------ESTILO DE CHECKBOX------------*/
+
+/* personalizar checkbox*/
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 26px;
+  
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*ocultar la casilla de verificación predeterminada del navegador*/
+.form input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* personalizar checkbox */
+.check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+/* al pasar el mouse, agregue el color del borde */
+.checkbox:hover input ~ .check {
+  border: 2px solid #FF7396;
+}
+
+/* agregue color de fondo cuando la casilla de verificación esté marcada*/
+.checkbox input:checked ~ .check {
+  background-color: #FF7396;
+  border:none;
+}
+
+/* crear la marca de verificación y ocultar cuando no esté marcada*/
+.check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Mostrar la marca de verificación cuando está marcada*/
+.checkbox input:checked ~ .check:after {
+  display: block;
+}
+
+/* estilo de marca de verificación */
+.checkbox .check:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #F2D7D9;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+#boton{
+  width: 25%;
+  color: #FF7396;
+  background-color:#d3cedf;
+  border-radius: 6px;
+  border: 1px outset hsla(345, 100%, 73%, 0.452);
+  margin-top: 3%;
+  
+}
+
+
+/*----------------------------------------------------Footer --------------------------------------------------*/
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #ffff;
+  padding: 10px;
+  font-size: 30px;
+  background-color: #748DA6;
+  margin: 0px;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-spotify:before {
+  content: "\ea94";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-libreoffice:before {
+  content: "\eae3";
+}
+
+ /*--------------------------------------Iconos de redes-------*/
+
+footer{
+  bottom: 0;
+  width: 100%;
+  background-color: #748DA6;
+  padding-bottom: 10px;
+  height: 250px; /* Con esto borro el cuadradito rosa feo del footer:*/
+}
+
+.main-info{
+  background-color: #748DA6;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 50px;
+}
+
+footer img{
+  margin: 10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 58px;
+}
+
+.titulo-footer{
+  background-color: #748DA6;
+  font-family: 'Fredoka One', cursive;
+  padding-left: 0px;
+  margin: 10px;
+  color: #ffff;
+  font-size: 2.9rem;
+}
+
+.p-footer{
+  margin: 15px;
+  background-color: #748DA6;
+  height: 100%;
+  width: 700px;
+  padding-right: 40px;
+  padding-left: 50px;
+  text-align: center;
+  color: white;
+}
+
+.footer-links{
+  background-color: #748DA6;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+#siguenos{
+  background-color: #748DA6;
+}
+
+footer a{
+  margin: 10px;
+  text-decoration: none;
+  background-color: #748DA6;
+  color: #748DA6;
+  background-color: white;
+  border-radius: 25px;
+  padding: 8px;
+  transition: ease-in-out .2s;
+}
+
+a:hover{
+  background-color: rgba(255, 255, 255, .6);
+}
+
+.separador{
+  height: 3px;
+  background-color: white;
+  width: 95%;
+  margin: auto;
+}
+
+.footer-redes{
+ background-color: #748DA6;
+  width: 98.5%;
+  height: 60px;
+  margin: 5px;
+}
+
+.footer-redes-span{
+  background-color: #748DA6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer-redes-iconos{
+  background-color: #748DA6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*----------------------------------------------------Footer --------------------------------------------------*/

@@ -2,25 +2,35 @@
 // Song data
 const songList = [
     {
-        title: "Hey Jude",
-        file: "hey jude.mp3",
+        title: "I bet on losing dogs",
+        file: "I bet on losing dogs-Mitski.mp3",
         cover: "1.jpg"
 
     },
     {
-        title: "Stay",
-        file: "Stay.mp3",
+        title: "Shape Of My Heart ",
+        file: "Shape Of My Heart-Sting.mp3",
         cover: "2.jpg"
     },
     {
-        title: "Unstoppable",
-        file: "Unstoppable.mp3",
+        title: "Somewhere Only We Know ",
+        file: "Somewhere Only We Know-Keane.mp3",
         cover: "3.jpg"
+    },
+    {
+        title: "All Too Well",
+        file: "All Too Well-Taylor Swift.mp3",
+        cover: "4.jpg"
+    },
+    {
+        title: "Seven",
+        file: "Seven-Taylor Swift.mp3",
+        cover: "5.jpg"
     },
 ]
 
 // Canción actual
-let actualSong = null
+let actualSong = null;
 
 // Capturar elementos del DOM para trabajar con JS
 const songs = document.getElementById("songs")
@@ -30,14 +40,21 @@ const title = document.getElementById("title")
 const play = document.getElementById("play")
 const prev = document.getElementById("prev")
 const next = document.getElementById("next")
-const progress = document.getElementById("progress")
-const progressContainer = document.getElementById("progress-container")
-progressContainer.addEventListener("click", setProgress)
+const progress = document.getElementById("progress");
+const progressContainer = document.getElementById("progress-container");
+if(progressContainer){
+    progressContainer.addEventListener("click", setProgress)
+}
+
 
 // Escuchar el elemento AUDIO
-audio.addEventListener("timeupdate", updateProgress)
+if(audio){
+    audio.addEventListener("timeupdate", updateProgress)
+}
+
 
 // Escuchar clicks en los controles
+if(play){
 play.addEventListener("click", () => {
     if (audio.paused) {
         playSong()   
@@ -45,9 +62,12 @@ play.addEventListener("click", () => {
         pauseSong()
     }
 })
+}
 
-next.addEventListener("click", () => nextSong())
-prev.addEventListener("click", () => prevSong())
+if(next){next.addEventListener("click", () => nextSong())}
+if(prev){prev.addEventListener("click", () => prevSong())
+}
+
 
 // Cargar canciones y mostrar el listado
 function loadSongs() {
@@ -60,11 +80,20 @@ function loadSongs() {
         link.textContent = song.title
         link.href = "#"
         // Escuchar clicks
-        link.addEventListener("click", () => loadSong(index))
+        if(link){ link.addEventListener("click", () => loadSong(index))}
+       
         // Añadir a li
-        li.appendChild(link)
+        if(li){
+            li.appendChild(link)
+
+        }
+        
         // Aañadir li a ul
-        songs.appendChild(li)
+        if(songs){
+            songs.appendChild(li)
+
+        }
+        
     })
 }
 
@@ -129,7 +158,8 @@ function changeActiveClass(lastIndex, newIndex) {
     links[newIndex].classList.add("active")
 }
 
-cover.src= "../img/portada.png"
+if(cover){cover.src= "../img/portada.png"}
+
 // Cambiar el cover de la canción
 function changeCover(songIndex) {
     cover.src = "../img/" + songList[songIndex].cover
@@ -159,7 +189,36 @@ function nextSong() {
 }
 
 // Lanzar siguiente canción cuando se acaba la actual
-audio.addEventListener("ended", () => nextSong())
+if(audio){audio.addEventListener("ended", () => nextSong())}
+
 
 // GO!
 loadSongs()
+
+//------------------ACTIVIDADES----------------------------
+let boton= document.getElementById('boton');
+let lista= document.getElementById('lista');
+let mensaje=document.getElementById('mensaje');
+let checks= document.querySelectorAll('.valores');
+
+if(boton){
+    boton.addEventListener('click', function(){
+        lista.innerHTML='';
+        mensaje.innerHTML='';
+        let msj=document.createElement('h1');
+        msj.innerHTML='Terminaste las siguientes actividades';
+        
+        mensaje.append(msj);
+        checks.forEach((e)=>{
+      
+            if(e.checked){
+              let elemento=document.createElement('li');
+              elemento.className='li';
+              elemento.innerHTML=e.value;
+              lista.appendChild(elemento);
+            }
+           
+        });
+      
+      });
+}

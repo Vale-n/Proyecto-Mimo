@@ -1,22 +1,22 @@
 <?php
-$to = "mairaanabella18@gmail.com";
-$subject = "Mail desde el formulario";
-$headers = "MIME-Version: 1.0" . "\r\n";
-$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+//Guardado de los datos del formulario 
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
-$message = "
-<html>
-<head>
-<title>HTML</title>
-</head>
-<body>
-<h1>Información del formulario</h1>
-<p>Nombre del usuario: $nombre </p> 
-<p>Email: $email </p> 
 
-</body>
-</html>";
- echo 'Gracias por comunicarse con nosotros';
-mail($to, $subject, $message, $headers);
+//$servicio = $_POST['opcionesSelect'];
+
+//Armado del mail
+$to = 'mairaanabella18@gmail.com';
+$email_subject = "Nuevo mensaje: de la web"; 
+$email_body = "Haz recibido un nuevo mensaje 
+            \n Nombre: $nombre
+            \n Correo: $email"; 
+$headers = "From: $email";
+
+//Envió del mail
+mail($to, $email_subject, $email_body, $headers); 
+echo 'Pronto nos estaremos comunicando con usted!';
 ?>
+<br>
+<br>
+<button><a href="../index.html">Volver</a></button>
