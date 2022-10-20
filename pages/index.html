@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="icon" href="../img/mimo.png">
   <script src="https://kit.fontawesome.com/0513530b0d.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
@@ -72,31 +75,31 @@
   </header>
   <!--HEADER-->
 
-  <main>
+  <main id="grid-main" >
     <!--MAIN-->
+
     <div class="contenedor_logo">
        <h2 class="logo">Mimo</h2>
     </div>
+
     
 
-    <section >
+    <section id="sec-mimo">
       <div class="queEsMimo">
       <h3>¿De qué se trata "Mimo"?</h3>
     
     
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto reprehenderit sapiente consectetur ut
-        laboriosam officiis provident ipsum, dolorem ea autem voluptate fuga. Eius adipisci porro aliquid, fuga ut
-        aspernatur totam!
-        Possimus nihil impedit dolores unde molestias, reiciendis sequi ullam. Labore veritatis consequatur alias quo ab
-        modi quis excepturi, laborum omnis, deleniti nihil similique, amet placeat id dicta accusantium vitae unde!
-        Voluptate velit in, accusantium vel nobis, ex, iste iure odit sapiente iusto beatae ratione consectetur dolore
-        maiores perferendis possimus quia suscipit temporibus quisquam tenetur adipisci modi a! Porro, reprehenderit
-        atque.</p>
+      <p> Mimo es una página creada con la intención de conscientizar sobre lo importante que es el descanso en 
+        la productividad, la desconexión de la mente y la reconexión con el disfrute, sobre lo importante que es 
+        despejar la mente y darse un pequeño break durante el día para mimarnos y las multiples maneras que existen 
+        para disfrutar de este tiempo para nosotros. Por eso, decidimos llenarla de recursos con los que cualquiera 
+        pueda crear su propio ritual de amor propio y autocuidado, 
+        para que puedas a empezar a descubrir cuál es ese mimo ideal para vos.</p>
     </div>    
     </section> <!--fin section de descripcion--> 
-    <span></span>
+   
 
-    <section  >
+    <section id="sec-player" >
 
       <div class="player">
 
@@ -134,41 +137,72 @@
 
       </div>
     </section> <!-- fin de reproductor -->
-    <span></span>
+
+    
+  
+    <div id="news-div"  >
     <section id="newsletter">
       <p id="titulo-news">Consejos diarios para una mente sana en su bandeja de entrada</p>
       <div id="div-form">
         
       <img src="../img/icon-news.png" alt=""  id="img-news">
-        <form action="" >
+        <form action="php/codigo.php" method="post" enctype="multipart/form-data" >
           
-          <label for=""   id="nombre">
+          <label for="nombre"   id="nombre">
           <i class="fa-solid fa-heart"></i>
-          <input type="text" placeholder="Nombre" >
+          <input type="text" placeholder="Nombre" name="nombre" id="nombre" >
           </label>
           
-          <label for="" id="email" >
+          <label for="email" id="email" >
             <i class="fa-solid fa-envelope"></i>
-            <input type="email" name="" id="" placeholder="Email">
+            <input type="email" name="email" id="email" placeholder="Email">
           </label>
-          <button type="button" id="btn-news">Enviar</button>
+          <button type="submit" id="btn-news">Enviar</button>
         
 
         </form>
       </div>
 
+
     </section>  <!--fin section de newletter-->
+  </div>
     
   </main>
 
   <footer>
-    <!--FOOTER-->
+    <div class="main-info">
+      <img src="../img/mimo.png" alt="logo de mimo">
+      <h2 class="titulo-footer">Mimo</h2>
+      <p class="p-footer">El contenido de Mimo es para fines informativos y hacer conciencia del autocuidado. Nuestro sitio web no pretende ser un sustituto del consejo, diagnóstico o tratamiento profesional.</p>
+  </div>
+  <div class="footer-links">
+      <a href="">Inicio</a>
+      <a href="">Recursos</a>
+      <a href="">Mi momento</a>
+      <a href="">Nosotras</a>
+  </div>
+  <div class="separador"></div>
+  <!-- -->
+
+  <div class="footer-redes">
+      <div class="footer-redes-span">
+          <span id="siguenos">Siguenos:</span>
+      </div>
+      
+      <div class="footer-redes-iconos">
+          <a href="" target="_blank" class="icon-spotify"></a>
+          <a href="https://www.instagram.com/fundacionpescar/?hl=es" target="_blank" class="icon-instagram"></a>
+          <a href="https://www.linkedin.com/company/fundacionpescar/mycompany/" target="_blank" class="icon-linkedin"></a>
+          <a href="https://www.facebook.com/pescarargentina" target="_blank" class="icon-facebook2"></a>         
+      </div>
+
+  </div>
 
   </footer>
   <!--FOOTER-->
- 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  
   
 </body>
 
