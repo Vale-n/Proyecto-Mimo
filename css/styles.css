@@ -25,11 +25,13 @@ body{
 .h1, h2{
   font-size: calc(1.325rem + .9vw);
 }
-h1{
-    margin: 15px;
+.titulo-mimo{
+  font-size: 30px;
+    padding-right: 30px;
     font-family: 'Fredoka One', cursive;
     color: #395a7b;
 }
+
 
 .logo { /*Animación que dice Mimo*/
     text-decoration: none;
