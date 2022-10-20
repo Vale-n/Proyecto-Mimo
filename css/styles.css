@@ -22,7 +22,7 @@ body {
   background-color: rgb(242, 215, 217);
  /* font: 14px/20px "Lato", Arial, sans-serif;*/
   /*color: #9E9E9E; */
-  margin-top: 30px;
+ 
 }
 
 @media (min-width: 768px){ /*Esto hace que el section sea responsive, ni yo sé xq dice main y no section, 
@@ -41,10 +41,16 @@ main {
   font-size: calc(1.325rem + .9vw);
 }
 h1{
-    margin: 15px;
+   /* margin: 15px; */
     font-family: 'Fredoka One', cursive;
     color: #395a7b;
     display: block;
+}
+.titulo-mimo{
+    font-size: 30px;
+    padding-right: 30px;
+    font-family: 'Fredoka One', cursive;
+    color: #f3f1f7;
 }
 
 .logo { /*--------------------------------------------Animación que dice Mimo------------------------------------*/
@@ -497,7 +503,9 @@ a:hover{
   align-items: center;
   justify-content: center;
 }
-
+.titulo-te{
+  margin: 15px;
+}
 .accordeon-main{
   min-height: 150vh;
 }
