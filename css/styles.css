@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
 }
 
 @media (min-width: 768px){ /*Esto hace que el section sea responsive, ni yo sé xq dice main y no section, 
