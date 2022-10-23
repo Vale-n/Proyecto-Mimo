@@ -101,8 +101,29 @@
   </footer> -->
 
   <!-- Link JavaScript -->
-
-
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    //Horas, minutos e segundos HTML
+    var hours$ = document.getElementById("hours")
+    var minutes$ = document.getElementById("minutes")
+    var seconds$ = document.getElementById("seconds")
+    
+    //Output de informações
+    var output = document.getElementById("output")
+    
+    //Opções do <select> "hours"
+    for (var cont = 0; cont <= 48; cont += 1) {
+        hours$.innerHTML += `<option value="${cont}">${cont}</option>`
+    }
+    //Opções do <select> "minutes"
+    for (var cont = 0; cont <= 59; cont += 1) {
+        minutes$.innerHTML += `<option value="${cont}">${cont}</option>`
+    }
+    //Opções do <select> "seconds"
+    for (var cont = 1; cont <= 59; cont += 1) {
+        seconds$.innerHTML += `<option value="${cont}">${cont}</option>`
+    }
+  </script>
 
 
 

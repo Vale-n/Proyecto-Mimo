@@ -420,6 +420,8 @@ footer img{
   font-family: 'Fredoka One', cursive;
   padding-left: 0px;
   margin: 10px;
+  margin-left: -120px;
+  margin-top: 40px;
   color: #ffff;
   font-size: 2.9rem;
 }
@@ -579,3 +581,64 @@ padding-bottom: 10px;
 /*-----------------------------------------------Sección de té ----------------------------------------------------*/
 
 /*-------------------------------------------- TIMER------------------------------------------------------------------*/
+/* Elementos con ID "main_section" */
+#main_section{
+  background-color: #f7e9b7;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+  border-radius: 50px;
+  
+  color: rgb(74, 80, 165);
+
+  width: 300px;
+  padding: 15px;
+  margin: auto;
+
+
+
+
+  text-align: center;
+  font: normal 14pt 'Questrial';
+}
+
+/* Elementos con ID "hours", "minutes" y "seconds" */
+#hours, #minutes, #seconds{
+  cursor: auto;
+  border-radius: 10px;
+
+}
+
+/* Elementos con ID "start" */
+#start{
+  background: rgb(90, 130, 184);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.400);
+
+  border: 300px;
+  border-radius: 30px;
+
+  width: 80px;
+  height: 35px;
+  margin-top: 5px;
+
+  color: rgb(255, 255, 255);
+  font-size: 12pt;
+
+  cursor: pointer;
+}
+
+/* Elementos con ID "start" no estado de pseudoclasse "hover" */
+#start:hover{
+  background: rgb(64, 76, 90);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.400);
+}
+
+.div-horas, .div-minutos, .div-segundos {
+  margin: 2px;
+  padding: 6px;
+  
+}
+h6{
+  font-family: 'Fredoka One', cursive;
+    color: #395a7b;
+    font-size: 20px;
+}
+/*----------------------------------------------------------------------------------------------------------*/
