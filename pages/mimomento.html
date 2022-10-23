@@ -53,6 +53,60 @@
        
         <main>
 
+            <!-- Encabezado -->
+    <section id="main_section">
+      <!-- Input de información -->
+      <div id="input">
+          <!-- Horas del temporizador -->
+          <div class="div-horas">
+          <h6 id="hours_paragraph">
+              Hours:
+          </h6>
+          <select name="hours" id="hours"></select>
+        </div>
+
+          <!-- Minutos del temporizador -->
+          <div class="div-minutos">
+          <h6 id="minutes_paragraph">
+              Minutes:
+          </h6>
+          <select name="minutes" id="minutes"></select>
+        </div>
+
+          <!-- Segundos del temporizador -->
+          <div class="div-segundos">
+          <h6 id="seconds_paragraph">
+              Seconds:
+          </h6>
+          <select name="seconds" id="seconds"></select>
+        </div>
+
+          <!-- Boton inicializador de conteo ! -->
+          <div class="div-botonStart">
+          <p>
+              <button id="start" onclick="startCountDown()">Start</button>
+          </p>
+        </div>
+      </div>
+
+      <!-- Output de informacion -->
+      <div id="output">
+          <h3></h3>
+      </div>
+  </section>
+
+  <!-- Rodapé 
+  <footer id="page_footer">
+      <h6>@Mimo</h6>
+  </footer> -->
+
+  <!-- Link JavaScript -->
+
+
+
+
+
+
         </main>
         <footer> <!------------------------------------------FOOTER------------------------------------------>
           <div class="main-info">
@@ -67,7 +121,7 @@
             <a href="../pages/nosotras.html">Nosotras</a>
         </div>
         <div class="separador"></div>
-        <!-- -->
+       
     
         <div class="footer-redes">
             <div class="footer-redes-span">
@@ -82,9 +136,9 @@
             </div>
     
         </div>
-        </footer>
+        </footer> <!------------------------------------------FOOTER------------------------------------------>
 
         <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/timer.js"></script>
 </body>
 </html>
