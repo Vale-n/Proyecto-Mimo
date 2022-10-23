@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
     <title>Actividades</title>
+    <link rel="icon" href="../images/mimo.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header><!--HEADER-->
-        <h1>Mimo</h1>
+       
         <!--NAVBAR-->
-        <nav class="navbar navbar-expand-lg bg-light"> 
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #cd7d84;"> 
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Inicio</a>
+              <h1 class="titulo-mimo">Mimo</h1>
+              <a class="navbar-brand" href="../index.html">Inicio</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -26,37 +28,60 @@
                           Recursos
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="actividades.html">Actividades</a></li>
+                          <li><a class="dropdown-item" href="../pages/actividades.html">Actividades</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="meditacion.html">Meditación</a></li>
+                          <li><a class="dropdown-item" href="../pages/sahumerios.html">Sahumerios</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="sahumerios.html">Sahumerios</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="te.html">Té</a></li>
+                          <li><a class="dropdown-item" href="../pages/te.html">Té</a></li>
                         </ul>
                       </li>
 
                     <li class="nav-item">
-                     <a class="nav-link" href="mimomento.html">Mi momento</a>
+                     <a class="nav-link" href="../pages/mimomento.html">Mi momento</a>
                     </li>
 
                      <li class="nav-item">
-                    <a class="nav-link" href="nosotras.html">Sobre nosotras</a>
+                    <a class="nav-link" href="../pages/nosotras.html">Sobre nosotras</a>
                   </li>
     
     
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+                
               </div>
             </div>
           </nav> <!--NAVBAR-->
         </header> <!--HEADER-->
     <main></main>
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer> <!--------------------------------------Footer-------------------------------------->
+      <div class="main-info">
+        <img src="../images/mimo.png" alt="logo de mimo">
+        <h2 class="titulo-footer">Mimo</h2>
+        <p class="p-footer">El contenido de Mimo es para fines informativos y hacer conciencia del autocuidado. Nuestro sitio web no pretende ser un sustituto del consejo, diagnóstico o tratamiento profesional.</p>
+    </div>
+    <div class="footer-links">
+        <a href="../index.html">Inicio</a>
+        <a href="../pages/actividades.html">Actividades</a>
+        <a href="../pages/mimomento.html">Mi momento</a>
+        <a href="../pages/nosotras.html">Nosotras</a>
+    </div>
+    <div class="separador"></div>
+    <!-- -->
+
+    <div class="footer-redes">
+        <div class="footer-redes-span">
+            <span id="siguenos">Siguenos:</span>
+        </div>
+        
+        <div class="footer-redes-iconos">
+            <a href="https://open.spotify.com/playlist/5A116h9GkqpxABIpGwMDAN?si=a359e85001094e1a" target="_blank" class="icon-spotify"></a>
+            <a href="https://www.instagram.com/fundacionpescar/?hl=es" target="_blank" class="icon-instagram"></a>
+            <a href="https://www.linkedin.com/company/fundacionpescar/mycompany/" target="_blank" class="icon-linkedin"></a>
+            <a href="https://www.facebook.com/pescarargentina" target="_blank" class="icon-facebook2"></a>         
+        </div>
+
+    </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>

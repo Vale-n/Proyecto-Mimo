@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css"> 
     <title>Té</title>
+    <link rel="icon" href="../images/mimo.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css"> 
+      <!--          FONTAWESOME CDN LINK           -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     <header><!--HEADER-->
-        <h1>Mimo</h1>
+        
         <!--NAVBAR-->
-        <nav class="navbar navbar-expand-lg bg-light"> 
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #cd7d84;"> 
             <div class="container-fluid">
-              <a class="navbar-brand" href="nosotras.html">Inicio</a>
+              <h1 class="titulo-mimo">Mimo</h1>
+              <a class="navbar-brand" href="../index.html">Inicio</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -26,41 +30,321 @@
                           Recursos
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="actividades.html">Actividades</a></li>
+                          <li><a class="dropdown-item" href="../pages/actividades.html">Actividades</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="meditacion.html">Meditación</a></li>
+                          <li><a class="dropdown-item" href="../pages/sahumerios.html">Sahumerios</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="sahumerios.html">Sahumerios</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="te.html">Té</a></li>
+                          <li><a class="dropdown-item" href="../pages/te.html">Té</a></li>
                         </ul>
                       </li>
     
                      
                   <li class="nav-item">
-                    <a class="nav-link" href="mimomento.html">Mi momento</a>
+                    <a class="nav-link" href="../pages/mimomento.html">Mi momento</a>
                   </li>       
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="nosotras.html">Sobre nosotras</a>
+                    <a class="nav-link" href="../pages/nosotras.html">Sobre nosotras</a>
                   </li>
     
     
                 </ul>
-                <form class="d-flex" role="search">
+                 <!-- <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+                </form> -->
               </div>
             </div>
           </nav> <!--NAVBAR-->
         </header> <!--HEADER-->
-    <main>
+      <main>
+        <h1 class="titulo-te">Tipos de té para la relajación</h1>
+    
+        <div class="acordeon-main">
 
-    </main>
-    <footer>
+        <div class="accordion">
+          <section class="accordion-content">
+              <header>
+                  <span class="title">Té de manzanilla</span>
+                  <i class="fa-solid fa-plus"></i>
+              </header> 
+            <article class="description">
+              <div class="imagen-te"> 
+                <img src="../images/manzanilla.jpg" alt="Manzanilla">
+              </div>
+          
+              <p>
+                  Sirve para el malestar estomacal y también para calmar el estrés sin caerte de sueño. Útil en casos de nerviosismo y ansiedad, potencia sus efectos al combinarla con lavanda. 
+              </p>
+              <ul>
+                  <li> <b>Contraindicaciones para tener en cuenta:</b>
+                      su consumo excesivo podría traerte somnolencia. </li>
+              </ul>
+          </article>
+          </section> 
+        
+        <section class="accordion-content">
+              <header>
+                  <span class="title">Té de valeriana</span>
+                  <i class="fa-solid fa-plus"></i>
+              </header>
+              <article class="description">
+                <div class="imagen-te"> 
+                  <img src="../images/valeriana.jpg" alt="Valeriana">
+                </div>
+                  <p>
+                  Es un sedante que relaja el sistema nervioso. Se recomienda mucho para personas que sufren de insomnio y ansiedad generalizada, alivia la fatiga y logra la armonía entre el cuerpo y la mente.
+              </p>
+              <ul>
+                  <li> <b>Contraindicaciones para tener en cuenta:</b></li>
+                  <li> Evita consumirla en la mañana porque puede causar somnolencia. </li>
+                  <li>No deben consumirla las personas que están tomando medicamentos. </li>
+                  <li>No se aconseja durante épocas de embarazo, o en lactancia. Consultar con un médico. </li>
+                  <li>No es compatible con el alcohol, ya que es depresor del sistema nervioso central, por ello, al mezclarse pueden provocar un exceso de sedación provocando fuerte somnolencia. </li>
+              </ul>
+              </article>
+        </section>  
+
+         <section class="accordion-content">
+          <header>
+              <span class="title">Té de lavanda</span>
+              <i class="fa-solid fa-plus"></i>
+          </header>
+          <article class="description">
+            <div class="imagen-te"> 
+              <img src="../images/lavanda.jpg" alt="Lavanda">
+            </div>
+          <p>
+              La lavanda es una de las mejores plantas para controlar el estrés, ayuda a conciliar el sueño, aliviar los dolores de cabeza y hasta controlar la irritabilidad. Se recomienda tomarlo en la noche, para alcanzar un estado pleno de relajación. 
+              Es un antiinflamatorio, reduce la ansiedad y tiene un efecto calmante, es buena para el intestino.
+          </p>
+          <ul>
+              <li><b>Contraindicaciones para tener en cuenta:</b> si eres alérgico al polen, debes consultar al médico. </li>
+          </ul>
+      </article>
+      </section> 
+
+      <section class="accordion-content">
+          <header>
+              <span class="title">Té de salvia</span>
+              <i class="fa-solid fa-plus"></i>
+          </header>
+          <article class="description">
+            <div class="imagen-te"> 
+              <img src="../images/salvia.jpg" alt="Salvia">
+            </div>
+          <p>
+              La salvia es una planta aromática, sirve para preparar una excelente infusión. Mejora la calidad de la digestión, la tos. Se recomienda endulzarlo con miel.
+          </p>
+          <ul>
+              <li><b>Contraindicaciones para tener en cuenta:</b></li>
+              <li>Consumirla con moderación, sin abusar, ya que contiene tujona. </li> 
+              <li>No se aconseja durante épocas de embarazo.</li> 
+          </ul>
+      </article>
+      </section> 
+
+      <section class="accordion-content">
+          <header>
+              <span class="title">Té de jazmín</span>
+              <i class="fa-solid fa-plus"></i>
+          </header>
+          <article class="description">
+            <div class="imagen-te"> 
+              <img src="../images/Jazmin.png" alt="Jazmin">
+            </div>
+          <p>
+              Es un excelente relajante natural, y alivia el estrés. El olor del té de jazmín tiene efectos sedantes, regulando  el estado de ánimo, reduce los dolores de cabeza y es digestivo. <br>
+              El aroma de jazmín puede bajar la frecuencia cardíaca y generar un efecto calmante. Ademá reduce el riesgo de problemas como la gripe y el resfriado, debido a los antioxidantes que contiene.
+          </p>
+          <ul>
+              <li><b>Contraindicaciones para tener en cuenta:</b> podría causar irritación estomacal.</li>
+          </ul>
+      </article>
+      </section> 
+
+      <section class="accordion-content">
+          <header>
+              <span class="title">Té de tilo</span>
+              <i class="fa-solid fa-plus"></i>
+          </header>
+          <article class="description">
+            <div class="imagen-te"> 
+              <img src="../images/tilo.jpg" alt="Tilo">
+            </div>
+          <p>
+            Ayuda a descansar, conciliar el sueño y relajarse. Es recomendado sobre todo para aquellas personas que estudian, ya que ayuda a calmar los nervios.
+          </p>
+          <ul>
+              <li><b>Contraindicaciones para tener en cuenta:</b></li>
+              <li>No se recomienda beber más de 3 tazas al día.</li>
+              <li>Podría causar náuseas.</li>
+              <li>Pacientes con enfermedades cardíacas no deben consumirlo.</li>
+              <li>Las personas que toman medicamentos que contienen litio o diuréticos no deben consumirlo.</li>
+          </ul>
+      </article>
+      </section> 
+
+      <section class="accordion-content">
+          <header>
+              <span class="title">Té de pasiflora</span>
+              <i class="fa-solid fa-plus"></i>
+          </header>
+          <article class="description">
+            <div class="imagen-te"> 
+              <img src="../images/pasiflora.jpg" alt="Pasiflora">
+            </div>
+          <p>
+              La pasiflora se distingue por ser una de las flores con más propiedades relajantes, por lo que se recomienda tomar una infusión diariamente para disminuir la ansiedad y controlar las crisis nerviosas. También para combatir el insomnio, ayudan a aliviar la fatiga muscular, la migraña y los estados leves de ansiedad, ya que regulariza el ritmo cardiaco y la presión arterial; además ayuda a aliviar los problemas digestivos.
+          </p>
+          <ul>
+              <li><b>Contraindicaciones para tener en cuenta:</b></li>
+              <li>No es recomendada durante el embarazo, ni el periodo de lactancia por no tener suficiente evidencia que avale su eficacia y seguridad en estas situaciones. Consultar con un médico u obstetra.</li>
+              <li>Está contraindicada en personas con alergia.</li>
+              <li>No debe ser consumida con bebidas alcohólicas por potenciar sus efectos, ni con otros medicamentos como los antidepresivos inhibidores de la monoaminooxidasa (IMAO), calmantes con efectos sedativos y antihistamínicos.</li>
+          </ul>
+      </article>
+      </section> 
+
+      <section class="accordion-content">
+          <header>
+              <span class="title">Té de óregano</span>
+              <i class="fa-solid fa-plus"></i>
+          </header>
+          <article class="description">
+            <div class="imagen-te"> 
+              <img src="../images/oregano.jpg" alt="Oregano">
+            </div>
+          <p>
+              Una bebida llena de antioxidantes naturales y poder relajante. Puedes tomarlo en cenas o meriendas para tenerlo más fácil a la hora de conciliar el sueño.
+          </p>
+          <ul>
+              <li><b>Contraindicaciones para tener en cuenta:</b> en exceso podría causar náuseas y vómitos; malestar en el estómago; diarrea; dolor de cabeza; vértigo; fatiga; dolor muscular; dificultad para tragar; salivación excesiva.
+              </li>
+          </ul>
+      </article>
+      </section> 
+
+    <section class="accordion-content">
+          <header>
+              <span class="title">Té de toronjil (o Melisa)</span>
+              <i class="fa-solid fa-plus"></i>
+          </header>
+          <article class="description">
+            <div class="imagen-te"> 
+              <img src="../images/melisa.jpg" alt="Toronjil/melisa">
+            </div>
+          <p>
+              Mejora la calidad del sueño ya que tiene propiedades calmantes y sedantes, lo que puede ser útil para mejorar el estado de ánimo y combatir el insomnio. Combate la ansiedad y el estrés, ayuda a aliviar los nervios. También es una infusión digestiva.
+          </p>
+          <ul>
+              <li><b>Contraindicaciones para tener en cuenta:</b></li>
+              <li>Puede disminuir la frecuencia cardíaca, producir somnolencia y producir una caída de la presión arterial.</li>
+              <li>No se recomienda para personas con hipotiroidismo.</li>
+              <li>No es recomendable para embarazadas ni mujeres en período de lactancia.</li>
+              <li>Puede irritar el estómago, así que no se aconseja tomarlo si se padece de úlceras u otros trastornos digestivos irritantes.</li>
+              <li>En cantidades excesivas puede resultar tóxico, no ingerir más de 3 tazas diarias.</li>
+              <li>No se recomienda beberlo si al mismo tiempo se están tomando antidepresivos, antihistamínicos, narcóticos u otros inhibidores de la recaptación de serotonina.</li>
+          </ul>
+      </article>
+      </section> 
+
+    <section class="accordion-content">
+          <header>
+              <span class="title">Té de cedrón (hierba Luisa)</span>
+              <i class="fa-solid fa-plus"></i>
+          </header>
+          <article class="description">
+            <div class="imagen-te"> 
+              <img src="../images/cedron.webp" alt="Cedrón">
+            </div>
+          <p>
+            Posee propiedades antisépticas, antiinflamatorias y sedantes; ayuda a tratar trastornos digestivos, disminuyendo el malestar estomacal; ayuda al insomnio y la ansiedad, permitiendo relajarnos y conciliar el sueño ya que es un sedante natural. <br>
+              El aceite esencial se utiliza en aromaterapia.
+          </p>
+          <ul>
+              <li><b>Contraindicaciones para tener en cuenta:</b></li>
+              <li>No está recomendada consumir durante el embarazo debido a que genera contracciones antes del tiempo.</li>
+              <li>Pacientes con enfermedades renales, ya que puede irritar los riñones. </li>
+              <li>Personas alérgicas a sus componentes no pueden consumirlo. </li>
+              <li>Bebés y niños con menos de 6 años de edad no pueden consumirlo.</li>
+          </ul>
+      </article>
+      </section> 
+
+      <section class="accordion-content">
+          <header>
+              <span class="title">Earl Grey</span>
+              <i class="fa-solid fa-plus"></i>
+          </header>
+          <article class="description">
+            <div class="imagen-te"> 
+              <img src="../images/te-negro.jpg" alt="Earl Grey">
+            </div>
+          <p>
+              Es té negro aromatizado con aceite de bergamota. Controla el estrés, ya que ayuda a combatir la tensión, el nerviosismo y la depresión. <br>
+              Actúa como digestivo, evita el dolor de estómago y sirve para tratar náuseas y cólicos.
+          </p>
+          <ul>
+              <li><b>Contraindicaciones para tener en cuenta:</b> no se recomienda su consumo a niños, embarazadas ni mujeres lactantes.</li>
+          </ul>
+      </article>
+      </section> 
+
+    <section class="accordion-content">
+          <header>
+              <span class="title">Té de menta</span>
+              <i class="fa-solid fa-plus"></i>
+          </header>
+          <article class="description">
+            <div class="imagen-te"> 
+              <img src="../images/menta.jpg" alt="Menta">
+            </div>
+          <p>
+              La menta tiene efectos relajantes (sobre todo si la tomas caliente) y calma el estado de ánimo. El té de menta sirve como analgésico, reduciendo el dolor y molestias asociadas a la indigestión.
+          </p>
+          <ul>
+              <li><b>Contraindicaciones para tener en cuenta:</b> no se recomienda en las personas que sufren de gastritis, dada su capacidad para estimular la producción de ácidos gástricos.</li>
+          </ul>
+      </article>
+      </section> 
+
+
+  </div>
+</div>
+
+</main>
+
+    <footer>  <!--------------------------------FOOTER ----------------------------->
+      <div class="main-info">
+        <img src="../images/mimo.png" alt="logo de mimo">
+        <h2 class="titulo-footer">Mimo</h2>
+        <p class="p-footer">El contenido de Mimo es para fines informativos y hacer conciencia del autocuidado. Nuestro sitio web no pretende ser un sustituto del consejo, diagnóstico o tratamiento profesional.</p>
+    </div>
+    <div class="footer-links">
+        <a href="../index.html">Inicio</a>
+        <a href="../pages/actividades.html">Actividades</a>
+        <a href="../pages/mimomento.html">Mi momento</a>
+        <a href="../pages/nosotras.html">Nosotras</a>
+    </div>
+    <div class="separador"></div>
+    <!-- -->
+
+    <div class="footer-redes">
+        <div class="footer-redes-span">
+            <span id="siguenos">Siguenos:</span>
+        </div>
+        
+        <div class="footer-redes-iconos">
+            <a href="https://open.spotify.com/playlist/5A116h9GkqpxABIpGwMDAN?si=a359e85001094e1a" target="_blank" class="icon-spotify"></a>
+            <a href="https://www.instagram.com/fundacionpescar/?hl=es" target="_blank" class="icon-instagram"></a>
+            <a href="https://www.linkedin.com/company/fundacionpescar/mycompany/" target="_blank" class="icon-linkedin"></a>
+            <a href="https://www.facebook.com/pescarargentina" target="_blank" class="icon-facebook2"></a>         
+        </div>
+
+    </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/acordeon.js"></script> 
 </body>
 </html>
