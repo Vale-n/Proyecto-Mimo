@@ -792,5 +792,149 @@ h6{
   border: 1px outset hsla(345, 100%, 73%, 0.452);
   margin-top: 3%; 
 }
+/*-----------------------------------------ACTIVIDADES---------------------------------------------------*/
 
+/*-----------------------------------------REPRODUCTOR-------------------------------------------------*/
+/* Player */
+.player {
+  min-width: 10;
+ /* width: 20rem;*/
+  width: 28rem;
+  height: 667px;
+  background-image: linear-gradient( #e4a6ab,#D3CEDF);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: #F47C7C;
+  box-shadow: 2px 2px 3px 3px rgba(102, 102, 102, 0.363);
+}
 
+/* Title */
+.title {
+  margin-top: 0;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+}
+
+/* Cover */
+.cover {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto 1rem auto; 
+}
+
+/* Progress */
+.progress-container {
+  height: .6rem;
+  background-color: #748DA6;
+  margin-bottom: 1rem; 
+}
+
+.progress {
+  background-color: #FF7396;
+  width: 0;
+  height: 100%;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.controls button {
+  background-color: transparent;
+  border: none;
+}
+
+.controls i {
+  font-size: 1.7rem;
+  color: #748DA6;
+}
+
+/* Songs */
+.songs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.songs li {
+  margin-bottom: 0.5rem;
+}
+
+.songs a {
+  color: #FF7396;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.songs a.active {
+  color: #748DA6;
+  font-weight: bold;
+}
+
+/*----------------------------------------------NEWSLETTER------------------------------------------------*/
+#newsletter{
+  width: 900px;
+  height: 250px;
+  background-color: #e4a6aba8;
+  box-shadow: 3px 3px 5px 5px #D3CEDF;
+  border-radius: 50px;
+}
+
+#titulo-news{
+  color: #FF7396;
+  font-weight: bold;
+  padding-left: 22%;
+  padding-top: 1%;
+  margin-bottom: 0;
+}
+
+#div-form{
+  display: grid;
+  grid-template-columns: 40% 60%; 
+}
+#newsletter label{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10%;
+  margin-top: 4%;
+}
+#newsletter input{
+  width: 90%;
+  background-color: #d3cedf;
+  font-size: 20px;
+  color:#FF7396;
+  padding: 3%;
+  border: none;
+  border-radius: 5px; 
+}
+.fa-heart , .fa-envelope{
+  margin: 4%;
+  color: #FF7396;
+}
+
+#nombre{
+  margin-bottom: 10px;
+}
+
+#img-news{
+  width: 50%;
+  margin-left: 20%;
+  margin-top: 4%;
+}
+
+#btn-news{
+  width: 25%;
+  color: #FF7396;
+  background-color:#d3cedf;
+  border-radius: 6px;
+  border: 1px outset hsla(345, 100%, 73%, 0.452);
+  margin-top: 3%;
+  margin-left: 37%;
+}
