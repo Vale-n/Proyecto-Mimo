@@ -583,19 +583,13 @@ padding-bottom: 10px;
 /*-------------------------------------------- TIMER------------------------------------------------------------------*/
 /* Elementos con ID "main_section" */
 #main_section{
-  background-color: #f7e9b7;
+  background-color: #84a4c4ec;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
   border-radius: 50px;
-  
   color: rgb(74, 80, 165);
-
   width: 300px;
   padding: 15px;
   margin: auto;
-
-
-
-
   text-align: center;
   font: normal 14pt 'Questrial';
 }
