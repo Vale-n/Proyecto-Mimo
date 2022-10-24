@@ -19,10 +19,8 @@
 } /*-------------------------------------------------------------------------------------*/
 
 body {
-  background-color: rgb(242, 215, 217);
- /* font: 14px/20px "Lato", Arial, sans-serif;*/
-  /*color: #9E9E9E; */
- 
+  background-color: #f2d7d9;
+
 }
 
 @media (min-width: 768px){ /*Esto hace que el section sea responsive, ni yo sé xq dice main y no section, 
@@ -73,15 +71,12 @@ h1{
    0% {
      box-shadow: 0 0 0 0 rgba(29, 171, 209, .6),  0 0 0 0 rgba(29, 171, 209, .6);
    }
- 
    30% {
      box-shadow: 0 0 0 100px rgba(29, 171, 209, 0), 0 0 0 0 rgba(29, 171, 209, .6);
    }
- 
    65% {
      box-shadow: 0 0 0 100px rgba(29, 171, 209, 0), 0 0 0 30px rgba(29, 171, 209, 0);
    }
- 
    100% {
      box-shadow: 0 0 0 0 rgba(29, 171, 209, 0), 0 0 0 30px rgba(29, 171, 209, 0);
    }/*--------------------------------------------Animación que dice Mimo------------------------------------*/
@@ -94,7 +89,6 @@ h1{
     box-shadow: 3px 3px 5px 5px #666;
     display: block;
 }
-
 
 /*-------------------------------------CARRUSEL NOSOTRAS-------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
@@ -239,7 +233,7 @@ h1{
 }
 
 .clash-card__unit-stats--barbarian {
-  background: #EE5487;
+  background: #d45e80;
 }
 
 .clash-card__unit-stats--barbarian .one-third {
@@ -254,14 +248,14 @@ h1{
 }
 
 .clash-card__unit-stats--giant {
-  background: #F6901A;
+  background: #f59275;
 }
 .clash-card__unit-stats--giant .one-third {
   border-right: 1px solid #de7b09;
 }
 
 .clash-card__unit-stats--goblin {
-  background: #82BB30;
+  background: #bcd197;
 }
 .clash-card__unit-stats--goblin .one-third {
   border-right: 1px solid #71a32a;
@@ -318,7 +312,6 @@ h1{
   margin-left: 15px;
 }
 
-
 .clash-card__unit-stats .stat-value {
   text-transform: uppercase;
   font-weight: 400;
@@ -345,11 +338,9 @@ h1{
 .slick-next {
   right: 100px;
   z-index: 999;
-}
-/*--------------------------------------------CARRUSEL NOSOTRAS-----------------------------------------------------*/
+}/*--------------------------------------------CARRUSEL NOSOTRAS-----------------------------------------------------*/
 
 /*----------------------------------------------------Footer --------------------------------------------------*/
-
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -387,9 +378,7 @@ h1{
 }
 .icon-libreoffice:before {
   content: "\eae3";
-}
-
- /*--------------------------------------Iconos de redes-------*/
+}/*--------------------------------------Iconos de redes-------*/
 
 footer{
   bottom: 0;
@@ -495,11 +484,9 @@ a:hover{
   justify-content: center;
   align-items: center;
 }
-
 /*----------------------------------------------------Footer --------------------------------------------------*/
 
 /*-----------------------------------------------Sección de té ----------------------------------------------------*/
-
 .acordeon-main, .titulo-te{
   display: flex;
   align-items: center;
@@ -577,7 +564,6 @@ padding-bottom: 10px;
   align-items: center;
   justify-content: center;
 }
-
 /*-----------------------------------------------Sección de té ----------------------------------------------------*/
 
 /*-------------------------------------------- TIMER------------------------------------------------------------------*/
@@ -598,24 +584,19 @@ padding-bottom: 10px;
 #hours, #minutes, #seconds{
   cursor: auto;
   border-radius: 10px;
-
 }
 
 /* Elementos con ID "start" */
 #start{
   background: rgb(90, 130, 184);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.400);
-
   border: 300px;
   border-radius: 30px;
-
   width: 80px;
   height: 35px;
   margin-top: 5px;
-
   color: rgb(255, 255, 255);
   font-size: 12pt;
-
   cursor: pointer;
 }
 
@@ -628,7 +609,6 @@ padding-bottom: 10px;
 .div-horas, .div-minutos, .div-segundos {
   margin: 2px;
   padding: 6px;
-  
 }
 h6{
   font-family: 'Fredoka One', cursive;
@@ -644,8 +624,6 @@ h6{
  flex-direction: column;
  padding-left: 350px;
 }
-
-
 /*------------------------------------------Playlist Celi-----------------------------------------------*/
 
 /*------------------------------------------Mi momento-----------------------------------------------*/
@@ -664,7 +642,155 @@ h6{
   padding: 7px;
   text-align: center;
   justify-self: center;
+} /*------------------------------------------Mi momento-----------------------------------------------*/
+
+
+/*-----------------------------------------ACTIVIDADES---------------------------------------------------*/
+#main-act{
+  display: grid;
+  grid-template-areas: 
+            "titulo titulo" 
+            "texto texto" 
+            "imagen form"
+            "mensaje mensaje";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  
+}
+#titulo-act{
+  margin-bottom: 15px;
+  justify-self: center;
+  grid-area: titulo;
+}
+#texto-act{
+  width: 90%;
+  background-color:#D3CEDF;
+  border-radius: 14px;
+  border: 2px outset hsla(345, 100%, 73%, 0.452);
+  padding: 7px;
+  text-align: center;
+  font-size:large;
+  justify-self: center;
+  grid-area: texto;
+}
+#div-act{
+  margin-top: 15px;
+  justify-self:flex-end;
+  grid-area: form;
+  width: 700px;
+  height: auto;
+  
+}
+#img-act{
+  margin-top: 60px;
+  justify-self: center;
+  grid-area: imagen;
+}
+#img{
+  width: 300px;
+}
+#div-msj{
+  grid-area: mensaje;
+  justify-self: center;
+  text-transform: uppercase;
+}
+#lista{
+  text-transform: none;
+  font-size: 140%;
+  color: #FF7396;
+  margin-bottom: 0px;
 }
 
+.li{
+  margin: 0;
+  padding: 12px 0 12px 41px;
+  list-style: none;
+  background-image: url(/images/Mimo-act.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 32px; 
+}
+
+#mensaje{
+  margin: 15px;
+}
+
+/* ------ESTILO DE CHECKBOX------------*/
+
+/* personalizar checkbox*/
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 26px;
+  
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*ocultar la casilla de verificación predeterminada del navegador*/
+.form input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* personalizar checkbox */
+.check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+/* al pasar el mouse, agregue el color del borde */
+.checkbox:hover input ~ .check {
+  border: 2px solid #FF7396;
+}
+
+/* agregue color de fondo cuando la casilla de verificación esté marcada*/
+.checkbox input:checked ~ .check {
+  background-color: #FF7396;
+  border:none;
+}
+
+/* crear la marca de verificación y ocultar cuando no esté marcada*/
+.check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Mostrar la marca de verificación cuando está marcada*/
+.checkbox input:checked ~ .check:after {
+  display: block;
+}
+
+/* estilo de marca de verificación */
+.checkbox .check:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #F2D7D9;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#boton{
+  width: 25%;
+  color: #FF7396;
+  background-color:#d3cedf;
+  border-radius: 6px;
+  border: 1px outset hsla(345, 100%, 73%, 0.452);
+  margin-top: 3%; 
+}
 
 
