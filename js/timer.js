@@ -16,7 +16,7 @@ function startCountDown(){
             if (minutes == 0) {
                 if (hours == 0) {
                     //alert("Te felicito por tomarte un momento para descansar (*°▽°*)")
-                    swal("Felicitaciones!", "Te felicito por tomarte un momento para descansar", "success");
+                    swal("¡Felicitaciones!", "Te felicito por tomarte un momento para descansar.", "success");
                     clearInterval(interval)
 
                 } else {

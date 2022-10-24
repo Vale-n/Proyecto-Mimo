@@ -647,3 +647,24 @@ h6{
 
 
 /*------------------------------------------Playlist Celi-----------------------------------------------*/
+
+/*------------------------------------------Mi momento-----------------------------------------------*/
+.section-timer{
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.article-timer{
+  width: 90%;
+  background-color: #D3CEDF;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.400);
+  border-radius: 14px;
+  padding: 7px;
+  text-align: center;
+  justify-self: center;
+}
+
+
+
