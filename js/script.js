@@ -158,11 +158,11 @@ function changeActiveClass(lastIndex, newIndex) {
     links[newIndex].classList.add("active")
 }
 
-if(cover){cover.src= "../img/portada.png"}
+if(cover){cover.src= "../images/portada.png"}
 
 // Cambiar el cover de la canción
 function changeCover(songIndex) {
-    cover.src = "../img/" + songList[songIndex].cover
+    cover.src = "../images/" + songList[songIndex].cover
 }
 
 // Cambiar el título de la canción
