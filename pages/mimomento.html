@@ -51,9 +51,70 @@
           </nav> <!--NAVBAR-->
         </header> <!--HEADER-->
        
-        <main>
+ <main>
+                  <!-------------------------------   TIMER   -------------------------------------->
+                    <!-- Encabezado -->
+                    <section id="main_section">
+                      <!-- Input de información -->
+                      <div id="input">
+                          <!-- Horas del temporizador -->
+                          <div class="div-horas">
+                          <h6 id="hours_paragraph">
+                              Hours:
+                          </h6>
+                          <select name="hours" id="hours"></select>
+                        </div>
 
-        </main>
+                          <!-- Minutos del temporizador -->
+                          <div class="div-minutos">
+                          <h6 id="minutes_paragraph">
+                              Minutes:
+                          </h6>
+                          <select name="minutes" id="minutes"></select>
+                        </div>
+
+                          <!-- Segundos del temporizador -->
+                          <div class="div-segundos">
+                          <h6 id="seconds_paragraph">
+                              Seconds:
+                          </h6>
+                          <select name="seconds" id="seconds"></select>
+                        </div>
+
+                          <!-- Boton inicializador de conteo ! -->
+                          <div class="div-botonStart">
+                          <p>
+                              <button id="start" onclick="startCountDown()">Start</button>
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Output de informacion -->
+                      <div id="output">
+                          <h3></h3>
+                      </div>
+                  </section>
+
+                  <!-------------------------------   TIMER   -------------------------------------->
+                <section class="section-timer">
+                  <article class="article-timer">
+                  <h6>Determina el tiempo</h6>
+                  <p>Como haz visto, hay muchas formas de tomarte una pausa. El reto es poder habitar la calma, no dejarnos llevar por la ansiedad, desconectar y bajar la velocidad.
+                  <b> Utiliza el temporizador para entregar el control del tiempo,</b> y así concentrarte 100% en el momento de relajarte.
+                  </p>
+                </article>
+                </section>
+                  
+                <section class="section-timer">
+                  <article class="article-timer">
+                  <h6>Antes de empezar...</h6>
+                  <p>Vamos a usar nuestra respiración para concentrarnos en el presente y no pensar en nada más. <br> Da una respiración muy profunda de 3 segundos; retenemos el aire 6 segundos, y por último, vamos a exhalar durante nueve segundos.
+                  </p>
+                </article>
+                </section>
+                  
+
+ </main>
         <footer> <!------------------------------------------FOOTER------------------------------------------>
           <div class="main-info">
             <img src="../images/mimo.png" alt="logo de mimo">
@@ -67,7 +128,7 @@
             <a href="../pages/nosotras.html">Nosotras</a>
         </div>
         <div class="separador"></div>
-        <!-- -->
+       
     
         <div class="footer-redes">
             <div class="footer-redes-span">
@@ -82,9 +143,33 @@
             </div>
     
         </div>
-        </footer>
+        </footer> <!------------------------------------------FOOTER------------------------------------------>
 
-        <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/script.js"></script>
+          <!-- Link JavaScript -->
+          <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+          <script>
+            //Horas, minutos e segundos HTML
+            var hours$ = document.getElementById("hours")
+            var minutes$ = document.getElementById("minutes")
+            var seconds$ = document.getElementById("seconds")
+            
+            //Output de informações
+            var output = document.getElementById("output")
+            
+            //Opções do <select> "hours"
+            for (var cont = 0; cont <= 48; cont += 1) {
+                hours$.innerHTML += `<option value="${cont}">${cont}</option>`
+            }
+            //Opções do <select> "minutes"
+            for (var cont = 0; cont <= 59; cont += 1) {
+                minutes$.innerHTML += `<option value="${cont}">${cont}</option>`
+            }
+            //Opções do <select> "seconds"
+            for (var cont = 1; cont <= 59; cont += 1) {
+                seconds$.innerHTML += `<option value="${cont}">${cont}</option>`
+            }
+          </script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/timer.js"></script>
 </body>
 </html>

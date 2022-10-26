@@ -19,21 +19,44 @@
 } /*-------------------------------------------------------------------------------------*/
 
 body {
-  background-color: rgb(242, 215, 217);
- /* font: 14px/20px "Lato", Arial, sans-serif;*/
-  /*color: #9E9E9E; */
- 
+  background-color: #f2d7d9;
+
 }
 
 @media (min-width: 768px){ /*Esto hace que el section sea responsive, ni yo sé xq dice main y no section, 
                               pero si dice section se rompe todo*/
-main {
-    width: 95%;
-    margin: 25px;
-    /*display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, auto);
-    gap: 10px;*/
+#grid-main {
+  margin: 14px;
+  display: grid; /*Agregar grid areas y probar */
+  grid-template-areas: 
+  "logo desc-mimo "
+  "player player "
+  "news news ";
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+#logo-mimo{
+margin-top: 5%;
+grid-area: logo;
+}
+#sec-mimo{
+margin-top: 5%;
+justify-self:center;
+grid-area: desc-mimo;
+}
+#sec-player{
+margin-top: 10%;
+justify-self:center;
+grid-area: player;
+}
+#news-div{
+margin-top: 10%;
+justify-self: center;
+grid-area: news;
+}
+#desc-musica{
+grid-area: musica;
 }
 }
 
@@ -52,49 +75,55 @@ h1{
     font-family: 'Fredoka One', cursive;
     color: #f3f1f7;
 }
+.titulo-mimo-main{
+  font-family: 'Fredoka One', cursive;
+  color: #395a7b;
+  font-size: 35px;
+}
+
+.contenedor_logo{
+  position: relative;   
+  box-sizing: border-box;
+  margin-top: 40px;
+  margin-left: 170px;
+}
 
 .logo { /*--------------------------------------------Animación que dice Mimo------------------------------------*/
-    text-decoration: none;
-    /*color: rgb(57, 90, 123);*/
-    color: #FFF7F0;
-    position: absolute;
-    top: 40%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    background: rgb(205, 125, 132);
-    padding: 70px 50px;
-    font-family: 'Fredoka One', cursive;
-    font-size: 45px;
-    /*text-transform: uppercase;*/
-    border-radius: 50%;
-    animation: animacion 4s linear infinite;
+  text-decoration: none;
+  color: #FFF7F0;;
+  position: absolute;
+  top: 45%; /*45%*/
+  left: 15%;
+  transform: translate(-50%, -50%);
+ /* padding: 70px 50px; 
+  font-family: 'Fredoka One', cursive; 
+  font-size: 45px; */
+  border-radius: 50%;
+  animation: animacion 6s linear infinite;
   }
  @keyframes animacion {
    0% {
      box-shadow: 0 0 0 0 rgba(29, 171, 209, .6),  0 0 0 0 rgba(29, 171, 209, .6);
    }
- 
    30% {
      box-shadow: 0 0 0 100px rgba(29, 171, 209, 0), 0 0 0 0 rgba(29, 171, 209, .6);
    }
- 
    65% {
      box-shadow: 0 0 0 100px rgba(29, 171, 209, 0), 0 0 0 30px rgba(29, 171, 209, 0);
    }
- 
    100% {
      box-shadow: 0 0 0 0 rgba(29, 171, 209, 0), 0 0 0 30px rgba(29, 171, 209, 0);
    }/*--------------------------------------------Animación que dice Mimo------------------------------------*/
 
  } 
  .queEsMimo { /*---------------------------Este es el section de qué se trata mimo------------*/
-    background-color: #d3cedf;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 3px 3px 5px 5px #666;
-    display: block;
+ width: 52rem;
+  height: 15rem; 
+  background-color: #d3cedf;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 5px 5px rgba(102, 102, 102, 0.253);
 }
-
 
 /*-------------------------------------CARRUSEL NOSOTRAS-------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
@@ -239,7 +268,7 @@ h1{
 }
 
 .clash-card__unit-stats--barbarian {
-  background: #EE5487;
+  background: #d45e80;
 }
 
 .clash-card__unit-stats--barbarian .one-third {
@@ -254,14 +283,14 @@ h1{
 }
 
 .clash-card__unit-stats--giant {
-  background: #F6901A;
+  background: #f59275;
 }
 .clash-card__unit-stats--giant .one-third {
   border-right: 1px solid #de7b09;
 }
 
 .clash-card__unit-stats--goblin {
-  background: #82BB30;
+  background: #bcd197;
 }
 .clash-card__unit-stats--goblin .one-third {
   border-right: 1px solid #71a32a;
@@ -318,7 +347,6 @@ h1{
   margin-left: 15px;
 }
 
-
 .clash-card__unit-stats .stat-value {
   text-transform: uppercase;
   font-weight: 400;
@@ -345,11 +373,9 @@ h1{
 .slick-next {
   right: 100px;
   z-index: 999;
-}
-/*--------------------------------------------CARRUSEL NOSOTRAS-----------------------------------------------------*/
+}/*--------------------------------------------CARRUSEL NOSOTRAS-----------------------------------------------------*/
 
 /*----------------------------------------------------Footer --------------------------------------------------*/
-
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -387,9 +413,7 @@ h1{
 }
 .icon-libreoffice:before {
   content: "\eae3";
-}
-
- /*--------------------------------------Iconos de redes-------*/
+}/*--------------------------------------Iconos de redes-------*/
 
 footer{
   bottom: 0;
@@ -420,6 +444,8 @@ footer img{
   font-family: 'Fredoka One', cursive;
   padding-left: 0px;
   margin: 10px;
+  margin-left: -120px;
+  margin-top: 40px;
   color: #ffff;
   font-size: 2.9rem;
 }
@@ -493,11 +519,9 @@ a:hover{
   justify-content: center;
   align-items: center;
 }
-
 /*----------------------------------------------------Footer --------------------------------------------------*/
 
 /*-----------------------------------------------Sección de té ----------------------------------------------------*/
-
 .acordeon-main, .titulo-te{
   display: flex;
   align-items: center;
@@ -514,7 +538,7 @@ a:hover{
   max-width: 830px;
   width: 100%;
   background: #FFF;
-  margin: 0 15px;
+  margin: 0 15px 20px;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 0 18px rgba(0,0,0, 0.2);
@@ -575,5 +599,379 @@ padding-bottom: 10px;
   align-items: center;
   justify-content: center;
 }
-
 /*-----------------------------------------------Sección de té ----------------------------------------------------*/
+
+/*-------------------------------------------- TIMER------------------------------------------------------------------*/
+/* Elementos con ID "main_section" */
+#main_section{
+  background-color: #84a4c4ec;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+  border-radius: 50px;
+  color: rgb(74, 80, 165);
+  width: 300px;
+  padding: 15px;
+  margin: 25px 500px 20px;
+  text-align: center;
+  font: normal 14pt 'Questrial';
+}
+
+/* Elementos con ID "hours", "minutes" y "seconds" */
+#hours, #minutes, #seconds{
+  cursor: auto;
+  border-radius: 10px;
+}
+
+/* Elementos con ID "start" */
+#start{
+  background: rgb(90, 130, 184);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.400);
+  border: 300px;
+  border-radius: 30px;
+  width: 80px;
+  height: 35px;
+  margin-top: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 12pt;
+  cursor: pointer;
+}
+
+/* Elementos con ID "start" no estado de pseudoclasse "hover" */
+#start:hover{
+  background: rgb(64, 76, 90);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.400);
+}
+
+.div-horas, .div-minutos, .div-segundos {
+  margin: 2px;
+  padding: 6px;
+}
+h6{
+  font-family: 'Fredoka One', cursive;
+    color: #395a7b;
+    font-size: 20px;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------Playlist Celi-----------------------------------------------*/
+.playlist-celi{
+  margin-top: 30px;
+ /* display: flex;
+ justify-content: center;
+ flex-direction: column;
+ padding-left: 350px; */
+}
+/*------------------------------------------Playlist Celi-----------------------------------------------*/
+
+/*------------------------------------------Mi momento-----------------------------------------------*/
+.section-timer{
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.article-timer{
+  width: 90%;
+  background-color: #D3CEDF;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.400);
+  border-radius: 14px;
+  padding: 7px;
+  text-align: center;
+  justify-self: center;
+} /*------------------------------------------Mi momento-----------------------------------------------*/
+
+
+/*-----------------------------------------ACTIVIDADES---------------------------------------------------*/
+#main-act{
+  display: grid;
+  grid-template-areas: 
+            "titulo titulo" 
+            "texto texto" 
+            "imagen form"
+            "mensaje mensaje";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  
+}
+#titulo-act{
+  margin-bottom: 15px;
+  justify-self: center;
+  grid-area: titulo;
+}
+#texto-act{
+  width: 90%;
+  background-color:#D3CEDF;
+  border-radius: 14px;
+  border: 2px outset hsla(345, 100%, 73%, 0.452);
+  padding: 7px;
+  text-align: center;
+  font-size:large;
+  justify-self: center;
+  grid-area: texto;
+}
+#div-act{
+  margin-top: 15px;
+  justify-self:flex-end;
+  grid-area: form;
+  width: 700px;
+  height: auto;
+  
+}
+#img-act{
+  margin-top: 60px;
+  justify-self: center;
+  grid-area: imagen;
+}
+#img{
+  width: 300px;
+}
+#div-msj{
+  grid-area: mensaje;
+  justify-self: center;
+  text-transform: uppercase;
+}
+#lista{
+  text-transform: none;
+  font-size: 140%;
+  color: #FF7396;
+  margin-bottom: 0px;
+}
+
+.li{
+  margin: 0;
+  padding: 12px 0 12px 41px;
+  list-style: none;
+  background-image: url(/images/Mimo-act.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 32px; 
+}
+
+#mensaje{
+  margin: 15px;
+}
+
+/* ------ESTILO DE CHECKBOX------------*/
+
+/* personalizar checkbox*/
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 26px;
+  
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*ocultar la casilla de verificación predeterminada del navegador*/
+.form input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* personalizar checkbox */
+.check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+/* al pasar el mouse, agregue el color del borde */
+.checkbox:hover input ~ .check {
+  border: 2px solid #FF7396;
+}
+
+/* agregue color de fondo cuando la casilla de verificación esté marcada*/
+.checkbox input:checked ~ .check {
+  background-color: #FF7396;
+  border:none;
+}
+
+/* crear la marca de verificación y ocultar cuando no esté marcada*/
+.check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Mostrar la marca de verificación cuando está marcada*/
+.checkbox input:checked ~ .check:after {
+  display: block;
+}
+
+/* estilo de marca de verificación */
+.checkbox .check:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #F2D7D9;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#boton{
+  width: 25%;
+  color: #FF7396;
+  background-color:#d3cedf;
+  border-radius: 6px;
+  border: 1px outset hsla(345, 100%, 73%, 0.452);
+  margin-top: 3%; 
+}
+/*-----------------------------------------ACTIVIDADES---------------------------------------------------*/
+
+/*-----------------------------------------REPRODUCTOR-------------------------------------------------*/
+/* Player */
+.player {
+  min-width: 10;
+ /* width: 20rem;*/
+  width: 28rem;
+  height: 667px;
+  background-image: linear-gradient( #e4a6ab,#D3CEDF);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: #F47C7C;
+  box-shadow: 2px 2px 3px 3px rgba(102, 102, 102, 0.363);
+}
+
+/* Title */
+.title {
+  margin-top: 0;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+}
+
+/* Cover */
+.cover {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto 1rem auto; 
+}
+
+/* Progress */
+.progress-container {
+  height: .6rem;
+  background-color: #748DA6;
+  margin-bottom: 1rem; 
+}
+
+.progress {
+  background-color: #FF7396;
+  width: 0;
+  height: 100%;
+}
+
+/* Controls */
+.controls{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.controls button{
+  background-color: transparent;
+  border: none;
+}
+
+.controls i{
+  font-size: 1.7rem;
+  color: #748DA6;
+}
+
+/* Songs */
+.songs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.songs li {
+  margin-bottom: 0.5rem;
+}
+
+.songs a {
+  color: #FF7396;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.songs a.active {
+  color: #748DA6;
+  font-weight: bold;
+}
+
+/*----------------------------------------------NEWSLETTER------------------------------------------------*/
+#newsletter{
+  width: 900px;
+  height: 250px;
+  background-color: #e4a6aba8;
+  box-shadow: 3px 3px 5px 5px #D3CEDF;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+#titulo-news{
+  color: #FF7396;
+  font-weight: bold;
+  padding-left: 22%;
+  padding-top: 1%;
+  margin-bottom: 0;
+}
+
+#div-form{
+  display: grid;
+  grid-template-columns: 40% 60%; 
+}
+#newsletter label{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10%;
+  margin-top: 4%;
+}
+#newsletter input{
+  width: 90%;
+  background-color: #d3cedf;
+  font-size: 20px;
+  color:#FF7396;
+  padding: 3%;
+  border: none;
+  border-radius: 5px; 
+}
+.fa-heart , .fa-envelope{
+  margin: 4%;
+  color: #FF7396;
+}
+
+#nombre{
+  margin-bottom: 10px;
+}
+
+#img-news{
+  width: 50%;
+  margin-left: 20%;
+  margin-top: 4%;
+}
+
+#btn-news{
+  width: 25%;
+  color: #FF7396;
+  background-color:#d3cedf;
+  border-radius: 6px;
+  border: 1px outset hsla(345, 100%, 73%, 0.452);
+  margin-top: 3%;
+  margin-left: 37%;
+}

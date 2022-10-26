@@ -7,7 +7,7 @@
     <title>Inicio</title>
     <link rel="icon" href="../images/mimo.png">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <header><!--HEADER-->
@@ -52,13 +52,99 @@
       </nav> <!--NAVBAR-->
     </header> <!--HEADER-->
 
-      <main> <!----------------------------------------------MAIN------------------------------------------>
-      <h2 class="logo">Mimo</h2>
+    <main id="grid-main"> <!------------------------------MAIN----------------------------------------------------->
 
-      <section class="queEsMimo">
-        <h3>¿De qué se trata "Mimo"?</h3>
-        <p> Mimo es una página creada con la intención de conscientizar sobre lo importante que es el descanso en la productividad, la desconexión de la mente y la reconexión con el disfrute, sobre lo importante que es despejar la mente y darse un pequeño break durante el día para mimarnos y las multiples maneras que existen para disfrutar de este tiempo para nosotros. Por eso, decidimos llenarla de recursos con los que cualquiera pueda crear su propio ritual de amor propio y autocuidado, para que puedas a empezar a descubrir cuál es ese mimo ideal para vos. </p>
-      </section>
+        <div class="contenedor_logo"> 
+       <!--  <h2 class="logo">Mimo</h2> -->
+       <img src="./images/mimo.png" class="logo" alt="">
+       </div> 
+    
+      <section id="sec-mimo">
+        <div class="queEsMimo">
+        <h3 class="titulo-mimo-main">¿De qué se trata Mimo?</h3>
+      
+        <p> Mimo es una página creada con la intención de conscientizar sobre lo importante que es el descanso en 
+          la productividad, la desconexión de la mente y la reconexión con el disfrute. Es sobre lo importante que es 
+          despejar la mente y darse un pequeño break durante el día para mimarnos y las múltiples maneras que existen 
+          para disfrutar de este tiempo para nosotros. Por eso, decidimos llenarla de recursos con los que cualquiera 
+          pueda crear su propio ritual de amor propio y autocuidado, 
+          para que puedas a empezar a descubrir cuál es ese mimo ideal para vos.</p>
+      </div>    
+      </section> <!---------------fin section de descripcion--------------------------> 
+
+      <section id="sec-player" >
+
+         <div class="player"> 
+  
+          <!-- Title -->
+          <h1 class="title" id="title"></h1> 
+  
+          <!-- Cover -->
+          <img src="" alt="" class="cover" id="cover"> 
+  
+          <!-- Audio HTML Media elememt -->
+          <audio id="audio"></audio> 
+  
+          <!-- Progress bar -->
+          <div id="progress-container" class="progress-container">
+            <section id="progress" class="progress"></section> 
+          </div> 
+  
+          <!-- Controls -->
+          <section class="controls">
+            <button class="prev">
+              <i id="prev" class="fas fa-backward"></i>
+            </button>
+            <button class="play">
+              <i id="play" class="fas fa-play"></i>
+            </button>
+            <button class="next">
+              <i id="next" class="fas fa-forward"></i>
+            </button> 
+            
+          </section> 
+  
+          <!-- Song list -->
+          <ul class="songs" id="songs">
+          </ul> 
+  
+        </div>
+      </section> <!-------------------------------------- fin de reproductor -------------------------------------->
+
+      <div id="news-div"  >
+        <section id="newsletter">
+          <p id="titulo-news">Consejos diarios para una mente sana en su bandeja de entrada</p>
+          <div id="div-form">
+          <img src="../images/icon-news.png" alt=""  id="img-news">
+
+            <form action="php/codigo.php" method="post" enctype="multipart/form-data" >
+              <label for="nombre"   id="nombre">
+              <i class="fa-solid fa-heart"></i>
+              <input type="text" placeholder="Nombre" name="nombre" id="nombre" >
+              </label>
+
+              <label for="email" id="email" >
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="email" id="email" placeholder="Email">
+              </label>
+              <button type="submit" id="btn-news">Enviar</button>
+            </form>
+          </div>
+        </section>  <!-----------------------------fin section de newletter------------------------------------>
+      </div>
+
+       <!-------------------------------------Playlist de mimo------------------------------------------------->
+      <section class="playlist-celi">
+      <article> 
+       
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7KUzPcwZkYalKvxClDup99?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </article>
+      <article><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7h0q28ljicbRBQQ3O5qo14?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></article>
+      <article>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7iQhXGc7V7hWupE9ThWSJz?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </article>
+    </section> 
+
     </main>
 
     <footer> <!--------------------------------------FOOTER------------------------------------------>
@@ -90,7 +176,7 @@
 
     </div>
     </footer><!--FOOTER-->
-
+    <script src="https://kit.fontawesome.com/0513530b0d.js" crossorigin="anonymous"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
 </body>
