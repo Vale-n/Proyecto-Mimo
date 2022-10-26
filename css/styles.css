@@ -76,14 +76,14 @@ h2 { /*Animación que dice Mimo*/
 
 * {
   margin: 0;
-  padding: 0;
+  padding: 2;
   box-sizing: border-box;
-  font-family: 'Fredoka One',cursive;
+  font-family: 'Fredoka One', cursive;
 }
 
 /* Estilos generales */
 .margin-bottom-16 {
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 
 /* Contenedor centrado */
