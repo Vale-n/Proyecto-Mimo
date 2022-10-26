@@ -522,7 +522,7 @@ a:hover{
 /*----------------------------------------------------Footer --------------------------------------------------*/
 
 /*-----------------------------------------------Sección de té ----------------------------------------------------*/
-.acordeon-main, .titulo-te{
+.acordeon-main, .titulo-te, .div-sahumerio{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -655,11 +655,14 @@ h6{
 /*------------------------------------------Playlist Celi-----------------------------------------------*/
 .playlist-celi{
   margin-top: 30px;
- /* display: flex;
+  display: flex;
  justify-content: center;
- flex-direction: column;
- padding-left: 350px; */
+ flex-direction: column; 
+ padding-left: 350px; 
 }
+
+
+
 /*------------------------------------------Playlist Celi-----------------------------------------------*/
 
 /*------------------------------------------Mi momento-----------------------------------------------*/
@@ -671,7 +674,7 @@ h6{
 
 }
 .article-timer{
-  width: 90%;
+  width: 60%;
   background-color: #D3CEDF;
   box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.400);
   border-radius: 14px;
@@ -694,6 +697,7 @@ h6{
   
 }
 #titulo-act{
+  margin-top: 15px;
   margin-bottom: 15px;
   justify-self: center;
   grid-area: titulo;
