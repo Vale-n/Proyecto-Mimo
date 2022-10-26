@@ -95,10 +95,9 @@ h1{
   top: 45%; /*45%*/
   left: 15%;
   transform: translate(-50%, -50%);
-  background: rgb(205, 125, 132);
-  padding: 70px 50px;
-  font-family: 'Fredoka One', cursive;
-  font-size: 45px;
+ /* padding: 70px 50px; 
+  font-family: 'Fredoka One', cursive; 
+  font-size: 45px; */
   border-radius: 50%;
   animation: animacion 6s linear infinite;
   }
@@ -118,8 +117,8 @@ h1{
 
  } 
  .queEsMimo { /*---------------------------Este es el section de qué se trata mimo------------*/
-  width: 52rem;
-  height: 15rem;
+ width: 52rem;
+  height: 15rem; 
   background-color: #d3cedf;
   padding: 20px;
   border-radius: 30px;
