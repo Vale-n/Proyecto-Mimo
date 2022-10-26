@@ -100,7 +100,7 @@ h1{
   font-family: 'Fredoka One', cursive;
   font-size: 45px;
   border-radius: 50%;
-  animation: animacion 4s linear infinite;
+  animation: animacion 6s linear infinite;
   }
  @keyframes animacion {
    0% {
